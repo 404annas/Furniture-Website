@@ -78,7 +78,7 @@ const Home = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {/* Card 1 */}
             <div className="flex flex-col">
-              <div className="p-4 bg-white text-black h-72 border-2 border-[#b37558] text-center hover:bg-[#b37558]/90 transition">
+              <div className="p-4 bg-white text-black h-fit border-2 border-[#b37558] text-center hover:bg-[#b37558]/90 transition">
                 <h2 className="text-lg sm:text-xl font-bold mb-2 rbs py-2">
                   Trade Discounts
                 </h2>
@@ -96,7 +96,7 @@ const Home = () => {
 
             {/* Card 2 */}
             <div className="flex flex-col-reverse">
-              <div className="p-4 bg-white text-black h-72 border-2 border-[#b37558] text-center hover:bg-[#b37558]/90 transition">
+              <div className="p-4 bg-white text-black h-fit border-2 border-[#b37558] text-center hover:bg-[#b37558]/90 transition">
                 <h2 className="text-lg sm:text-xl font-bold mb-2 rbs py-2">
                   Client-Centric Approach
                 </h2>
@@ -114,7 +114,7 @@ const Home = () => {
 
             {/* Card 3 */}
             <div className="flex flex-col">
-              <div className="p-4 bg-white text-black h-72 border-2 border-[#b37558] text-center hover:bg-[#b37558]/90 transition">
+              <div className="p-4 bg-white text-black h-fit border-2 border-[#b37558] text-center hover:bg-[#b37558]/90 transition">
                 <h2 className="text-lg sm:text-xl font-bold mb-2 rbs py-2">
                   Environmental Responsibility
                 </h2>
@@ -132,7 +132,7 @@ const Home = () => {
 
             {/* Card 4 */}
             <div className="flex flex-col-reverse">
-              <div className="p-4 bg-white text-black h-72 border-2 border-[#b37558] text-center hover:bg-[#b37558]/90 transition">
+              <div className="p-4 bg-white text-black h-fit border-2 border-[#b37558] text-center hover:bg-[#b37558]/90 transition">
                 <h2 className="text-lg sm:text-xl font-bold mb-2 rbs py-2">
                   Attention to detail
                 </h2>
