@@ -16,6 +16,7 @@ import Lightning from "./pages/Lightning";
 import Automation from "./pages/Automation";
 import Style from "./pages/Style";
 import DVisualisation from "./pages/DVisualisation";
+import PM from "./pages/PM";
 
 const App = () => {
   return (
@@ -36,6 +37,7 @@ const App = () => {
         <Route path="/automation" element={<Automation />} />
         <Route path="/style" element={<Style />} />
         <Route path="/d-visualisation" element={<DVisualisation />} />
+        <Route path="/project-management" element={<PM />} />
       </Route>
     </Routes>
   );

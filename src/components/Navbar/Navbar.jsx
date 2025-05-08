@@ -130,6 +130,15 @@ const Navbar = () => {
               )}
             </div>
           ))}
+          <Link
+            to="/project-management"
+            className="px-4 py-2 hover:bg-[#f5d9b3] rounded"
+          >
+            Project Management
+          </Link>
+          <Link to="/contact" className="px-4 py-2 hover:bg-[#f5d9b3] rounded">
+            Contact Us
+          </Link>
         </div>
       )}
     </nav>
