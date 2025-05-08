@@ -13,20 +13,25 @@ const Footer = () => {
           />
         </Link>
 
-        <p className="text-xs sm:text-sm md:text-base font-medium text-center sm:text-left">
-          COPYRIGHT © 2023 | All Rights Reserved | —
-          <a
-            className="ml-1 underline hover:text-[#b37558] transition duration-200"
-            href="https://exclusifdesignz.co.uk"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            Exclusifdesignz.co.uk
-          </a>
-        </p>
+        <div className="flex flex-col items-center justify-center gap-2">
+          <p className="text-xs sm:text-sm font-medium text-center sm:text-left">
+            T&C Says Exclusif Designz | —
+            <a
+              className="ml-1 underline hover:text-[#18110e] transition duration-200"
+              href="/"
+              rel="noopener noreferrer"
+            >
+              Exclusifdesignz.co.uk
+            </a>
+          </p>
+          <p className="text-xs sm:text-sm font-medium text-center sm:text-left">
+            Kingston Road, Kingston upon thames, Surrey, London, UK | Tel:
+            07803326891
+          </p>
+        </div>
 
         <div className="flex space-x-4 justify-center">
-          <a className="text-blue-600 hover:text-blue-800 transition duration-200 text-sm">
+          <a className="text-blue-600 hover:text-blue-800 transition duration-200">
             <svg
               fill="currentColor"
               strokeLinecap="round"

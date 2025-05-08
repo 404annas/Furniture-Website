@@ -69,7 +69,7 @@ const Testimonials = () => {
     <section className="w-full py-20 bg-gradient-to-b from-[#b37558] to-white">
       <div className="text-center mb-12 px-4">
         <h2 className="text-2xl md:text-3xl uppercase tracking-[0.2em] font-semibold text-white">
-          Raving Reviews
+          Testimonials
         </h2>
       </div>
 

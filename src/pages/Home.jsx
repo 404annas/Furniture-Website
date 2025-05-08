@@ -1,21 +1,26 @@
 import React from "react";
-import { FaHome, FaBuilding, FaBriefcase, FaArrowRight } from "react-icons/fa";
+import { FaArrowRight, FaCouch, FaHardHat, FaTasks } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import Testimonials from "./Testimonials";
+import { GiWoodBeam } from "react-icons/gi";
 
 const Home = () => {
   const baseItems = [
     {
-      icon: <FaHome className="w-6 h-6 sm:w-8 sm:h-8 text-white" />,
+      icon: <FaTasks className="w-6 h-6 sm:w-8 sm:h-8 text-white" />,
       label: "Project Management",
     },
     {
-      icon: <FaBuilding className="w-6 h-6 sm:w-8 sm:h-8 text-white" />,
-      label: "Residential Project",
+      icon: <FaHardHat className="w-6 h-6 sm:w-8 sm:h-8 text-white" />,
+      label: "Construction",
     },
     {
-      icon: <FaBriefcase className="w-6 h-6 sm:w-8 sm:h-8 text-white" />,
-      label: "Commercial Project",
+      icon: <FaCouch className="w-6 h-6 sm:w-8 sm:h-8 text-white" />,
+      label: "Interior Design",
+    },
+    {
+      icon: <GiWoodBeam className="w-6 h-6 sm:w-8 sm:h-8 text-white" />,
+      label: "Joinery",
     },
   ];
 
@@ -95,7 +100,7 @@ const Home = () => {
             </div>
 
             {/* Card 2 */}
-            <div className="flex flex-col-reverse">
+            <div className="flex md:flex-col-reverse flex-col">
               <div className="p-4 bg-white text-black h-fit border-2 border-[#b37558] text-center hover:bg-[#b37558]/90 transition">
                 <h2 className="text-lg sm:text-xl font-bold mb-2 rbs py-2">
                   Client-Centric Approach
@@ -131,7 +136,7 @@ const Home = () => {
             </div>
 
             {/* Card 4 */}
-            <div className="flex flex-col-reverse">
+            <div className="flex md:flex-col-reverse flex-col">
               <div className="p-4 bg-white text-black h-fit border-2 border-[#b37558] text-center hover:bg-[#b37558]/90 transition">
                 <h2 className="text-lg sm:text-xl font-bold mb-2 rbs py-2">
                   Attention to detail
