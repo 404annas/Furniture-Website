@@ -12,11 +12,22 @@ const ContactModal = ({ onSubmitSuccess }) => {
   const [isFormOpen, setIsFormOpen] = useState(true);
 
   const onSubmit = async (data) => {
-    await new Promise((resolve) => setTimeout(resolve, 2000));
-    console.log("Form submitted:", data);
-    setIsFormOpen(false); // Close form
-    reset();
-    // if (onSubmitSuccess) onSubmitSuccess();
+    const { name, email, phone, message } = data;
+
+    // Construct WhatsApp message using form inputs
+    const whatsappMessage = `Hello Annas,%0A%0AYou have a new form submission:%0A%0AName: ${name}%0AEmail: ${email}%0APhone: ${phone}%0AMessage: ${message}`;
+
+    // Add your admin's WhatsApp number here (with country code, no + sign)
+    const adminPhoneNumber = "923272695806"; // example: 92 = Pakistan, 3001234567 = number
+
+    // WhatsApp URL
+    const whatsappURL = `https://wa.me/${adminPhoneNumber}?text=${whatsappMessage}`;
+
+    // Open WhatsApp with message
+    window.open(whatsappURL, "_blank");
+
+    setIsFormOpen(false); // Close the form
+    reset(); // Clear form fields
   };
 
   useEffect(() => {

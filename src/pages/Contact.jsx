@@ -1,6 +1,27 @@
-import React from "react";
+import React, { useState } from "react";
 
 const Contact = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const adminPhoneNumber = "923272695806"; // Change to your WhatsApp number
+
+    const whatsappMessage = `Hello Saleha,%0A%0AYou have a new form submission:%0A%0AName: ${name}%0AEmail: ${email}%0AMessage: ${message}`;
+
+    const whatsappURL = `https://wa.me/${adminPhoneNumber}?text=${whatsappMessage}`;
+
+    window.open(whatsappURL, "_blank");
+
+    // Optionally clear the form after sending
+    setName("");
+    setEmail("");
+    setMessage("");
+  };
+
   return (
     <section className="bg-white">
       {/* Heading Section */}
@@ -41,12 +62,17 @@ const Contact = () => {
         </div>
 
         {/* Right Side Form */}
-        <div className="w-full lg:w-1/2 bg-[#b37558] p-6 sm:p-10 rounded-lg shadow-md flex flex-col justify-center gap-6 rb">
+        <form
+          onSubmit={handleSubmit}
+          className="w-full lg:w-1/2 bg-[#b37558] p-6 sm:p-10 rounded-lg shadow-md flex flex-col justify-center gap-6 rb"
+        >
           <div>
             <label className="text-white block mb-2 font-semibold">
               Your Name
             </label>
             <input
+              value={name}
+              onChange={(e) => setName(e.target.value)}
               type="text"
               className="w-full p-3 rounded bg-white outline-none text-sm"
               required
@@ -57,6 +83,8 @@ const Contact = () => {
               Your Email
             </label>
             <input
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
               type="email"
               className="w-full p-3 rounded bg-white outline-none text-sm"
               required
@@ -67,14 +95,20 @@ const Contact = () => {
               Message
             </label>
             <textarea
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
               rows="4"
               className="w-full p-3 rounded bg-white outline-none text-sm"
+              required
             ></textarea>
           </div>
-          <button className="bg-white text-[#b37558] font-semibold py-3 px-6 rounded hover:bg-gray-100 transition text-sm sm:text-base">
+          <button
+            type="submit"
+            className="bg-white text-[#b37558] font-semibold py-3 px-6 rounded hover:bg-gray-100 transition text-sm sm:text-base"
+          >
             Send Message
           </button>
-        </div>
+        </form>
       </div>
     </section>
   );
