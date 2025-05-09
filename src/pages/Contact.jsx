@@ -10,7 +10,7 @@ const Contact = () => {
 
     const adminPhoneNumber = "923272695806"; // Change to your WhatsApp number
 
-    const whatsappMessage = `Hello Saleha,%0A%0AYou have a new form submission:%0A%0AName: ${name}%0AEmail: ${email}%0AMessage: ${message}`;
+    const whatsappMessage = `Hello Saleha,%0A%0AI am:%0A%0AName: ${name}%0AEmail: ${email}%0AMessage: ${message}`;
 
     const whatsappURL = `https://wa.me/${adminPhoneNumber}?text=${whatsappMessage}`;
 

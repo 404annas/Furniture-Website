@@ -15,7 +15,7 @@ const ContactModal = ({ onSubmitSuccess }) => {
     const { name, email, phone, message } = data;
 
     // Construct WhatsApp message using form inputs
-    const whatsappMessage = `Hello Annas,%0A%0AYou have a new form submission:%0A%0AName: ${name}%0AEmail: ${email}%0APhone: ${phone}%0AMessage: ${message}`;
+    const whatsappMessage = `Hello Saleha,%0A%0AI am:%0A%0AName: ${name}%0AEmail: ${email}%0APhone: ${phone}%0AMessage: ${message}`;
 
     // Add your admin's WhatsApp number here (with country code, no + sign)
     const adminPhoneNumber = "923272695806"; // example: 92 = Pakistan, 3001234567 = number
