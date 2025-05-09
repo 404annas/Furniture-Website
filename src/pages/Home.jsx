@@ -2,6 +2,7 @@ import React from "react";
 import { FaArrowRight, FaCouch, FaHardHat, FaTasks } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import Testimonials from "./Testimonials";
+import Members from "./Members";
 import { GiWoodBeam } from "react-icons/gi";
 
 const Home = () => {
@@ -318,6 +319,7 @@ const Home = () => {
       </div>
 
       <Testimonials />
+      <Members />
     </div>
   );
 };

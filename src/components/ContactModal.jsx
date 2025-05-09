@@ -10,7 +10,11 @@ const ContactModal = () => {
     reset,
   } = useForm();
 
-  const [isFormOpen, setIsFormOpen] = useState(true);
+  //   const [isFormOpen, setIsFormOpen] = useState(true);
+
+  const [isFormOpen, setIsFormOpen] = useState(() => {
+    return !localStorage.getItem("hasVisited");
+  });
 
   useEffect(() => {
     const hasVisited = localStorage.getItem("hasVisited");
@@ -59,7 +63,7 @@ const ContactModal = () => {
       <div className="bg-white w-full max-w-4xl sm:max-h-[80vh] max-h-[75vh] overflow-y-auto rounded-2xl shadow-xl p-4 sm:p-8">
         <button
           onClick={handleClose}
-          className="absolute md:bottom-[470px] md:right-20 bottom-[370px] left-[270px] sm:text-2xl text-lg text-gray-600 hover:text-black transition"
+          className="absolute lg:bottom-[430px] lg:left-[1090px] md:bottom-[470px] md:right-20 bottom-[370px] left-[270px] sm:text-2xl text-lg text-gray-600 hover:text-black transition"
           aria-label="Close"
         >
           <IoMdClose />

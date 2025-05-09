@@ -14,7 +14,7 @@ const Style = () => {
         ></div>
         <div className="absolute inset-0 bg-[#a1684e] opacity-60"></div>
         <h1
-          className="relative text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold z-10 px-4 rbs"
+          className="relative text-white text-2xl sm:text-3xl md:text-4xl font-semibold z-10 px-4 rbs"
           style={{ textShadow: "2px 4px 4px rgba(0, 0, 0, 0.5)" }}
         >
           Check Your Style
