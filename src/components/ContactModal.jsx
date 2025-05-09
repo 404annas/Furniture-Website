@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
+import { IoMdClose } from "react-icons/io";
 
-const ContactModal = ({ onSubmitSuccess }) => {
+const ContactModal = () => {
   const {
     register,
     handleSubmit,
@@ -11,23 +12,35 @@ const ContactModal = ({ onSubmitSuccess }) => {
 
   const [isFormOpen, setIsFormOpen] = useState(true);
 
+  useEffect(() => {
+    const hasVisited = localStorage.getItem("hasVisited");
+
+    if (!hasVisited) {
+      setIsFormOpen(true);
+    } else {
+      setIsFormOpen(false);
+    }
+  }, []);
+
   const onSubmit = async (data) => {
     const { name, email, phone, message } = data;
 
-    // Construct WhatsApp message using form inputs
     const whatsappMessage = `Hello Saleha,%0A%0AI am:%0A%0AName: ${name}%0AEmail: ${email}%0APhone: ${phone}%0AMessage: ${message}`;
 
-    // Add your admin's WhatsApp number here (with country code, no + sign)
-    const adminPhoneNumber = "923272695806"; // example: 92 = Pakistan, 3001234567 = number
+    const adminPhoneNumber = import.meta.env.VITE_ADMIN_PHONE;
 
-    // WhatsApp URL
     const whatsappURL = `https://wa.me/${adminPhoneNumber}?text=${whatsappMessage}`;
 
-    // Open WhatsApp with message
     window.open(whatsappURL, "_blank");
 
-    setIsFormOpen(false); // Close the form
-    reset(); // Clear form fields
+    localStorage.setItem("hasVisited", "true");
+
+    setIsFormOpen(false);
+    reset();
+  };
+
+  const handleClose = () => {
+    setIsFormOpen(false);
   };
 
   useEffect(() => {
@@ -44,6 +57,14 @@ const ContactModal = ({ onSubmitSuccess }) => {
   return (
     <div className="fixed inset-0 bg-black bg-opacity-70 z-50 flex items-center justify-center p-4 lg:pt-28 md:pt-32 sm:pt-32 pt-32">
       <div className="bg-white w-full max-w-4xl sm:max-h-[80vh] max-h-[75vh] overflow-y-auto rounded-2xl shadow-xl p-4 sm:p-8">
+        <button
+          onClick={handleClose}
+          className="absolute md:bottom-[470px] md:right-20 bottom-[370px] left-[270px] sm:text-2xl text-lg text-gray-600 hover:text-black transition"
+          aria-label="Close"
+        >
+          <IoMdClose />
+        </button>
+
         <h2 className="text-xl sm:text-2xl font-semibold mb-6 text-center">
           Enter Your Details
         </h2>

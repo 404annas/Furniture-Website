@@ -26,7 +26,7 @@ const App = () => {
     const hasVisited = localStorage.getItem("hasVisited");
     if (!hasVisited) {
       setShowPopup(true);
-      localStorage.setItem("hasVisited", "true");
+      // localStorage.setItem("hasVisited", "true");
     }
   }, []);
 

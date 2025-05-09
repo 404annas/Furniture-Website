@@ -8,7 +8,7 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    const adminPhoneNumber = "923272695806"; // Change to your WhatsApp number
+    const adminPhoneNumber = import.meta.env.VITE_ADMIN_PHONE;
 
     const whatsappMessage = `Hello Saleha,%0A%0AI am:%0A%0AName: ${name}%0AEmail: ${email}%0AMessage: ${message}`;
 
@@ -16,7 +16,6 @@ const Contact = () => {
 
     window.open(whatsappURL, "_blank");
 
-    // Optionally clear the form after sending
     setName("");
     setEmail("");
     setMessage("");
