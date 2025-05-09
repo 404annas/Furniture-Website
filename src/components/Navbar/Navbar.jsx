@@ -5,6 +5,7 @@ import { AiOutlinePlus, AiOutlineMinus } from "react-icons/ai";
 
 const navItems = [
   { path: "/", label: "Home" },
+  { path: "/about", label: "About Us" },
   {
     path: "/design-process",
     label: "Design Process",
@@ -16,8 +17,10 @@ const navItems = [
       { path: "/d-rendering", label: "3D Rendering" },
     ],
   },
-  { path: "/about", label: "About Us" },
   { path: "/portfolio", label: "Portfolio" },
+  { path: "/portfolio", label: "Kitchen" },
+  { path: "/blogs", label: "Bathroom" },
+  { path: "/about", label: "Consultation" },
   { path: "/blogs", label: "Blog" },
 ];
 
@@ -59,7 +62,7 @@ const Navbar = () => {
         <div className="hidden lg:flex items-center font-semibold uppercase text-sm">
           {navItems.map(({ path, label, children }) => (
             <div key={label} className="relative group">
-              {children ? (
+              {/* {children ? (
                 <button
                   onClick={() => setDesignOpen((prev) => !prev)}
                   className="flex items-center gap-1 px-4 py-2 relative overflow-hidden z-10 
@@ -69,9 +72,10 @@ const Navbar = () => {
                 >
                   {label} {designOpen ? <AiOutlineMinus /> : <AiOutlinePlus />}
                 </button>
-              ) : (
-                <NavLink to={path}>{label}</NavLink>
-              )}
+              ) :  */}
+              {/* ( */}
+              <NavLink to={path}>{label}</NavLink>
+              {/* )} */}
               {children && designOpen && (
                 <div className="absolute top-full left-0 mt-2 bg-[#F7E7CE] shadow-md rounded-md p-2 flex flex-col transition-all duration-300 ease-in-out w-60">
                   {children.map((child) => (
@@ -104,32 +108,36 @@ const Navbar = () => {
       {/* Responsive menu */}
       {menuOpen && (
         <div className="bg-yellow-100 w-full absolute left-0 top-full z-40 flex flex-col gap-2 px-4 py-4 transition-all duration-500 ease-in-out font-semibold uppercase text-xs">
-          {navItems.map(({ path, label, children }) => (
-            <div key={label}>
-              {children ? (
-                <div>
-                  <button
-                    onClick={() => setDesignOpen((prev) => !prev)}
-                    className="flex justify-between items-center w-full font-semibold uppercase text-left px-4 py-2 text-xs"
-                  >
-                    <span>{label}</span>
-                    {designOpen ? <AiOutlineMinus /> : <AiOutlinePlus />}
-                  </button>
-                  {designOpen && (
-                    <div className="flex flex-col pl-4 transition-all duration-300 ease-in-out font-normal bg-white rounded-xl w-60">
-                      {children.map((child) => (
-                        <NavLink key={child.path} to={child.path}>
-                          {child.label}
-                        </NavLink>
-                      ))}
-                    </div>
-                  )}
-                </div>
-              ) : (
-                <NavLink to={path}>{label}</NavLink>
-              )}
-            </div>
-          ))}
+          {navItems
+            .filter(({ label }) => {
+              return !(label === "Kitchen" || label === "Bathroom");
+            })
+            .map(({ path, label, children }) => (
+              <div key={label}>
+                {children ? (
+                  <div>
+                    <button
+                      onClick={() => setDesignOpen((prev) => !prev)}
+                      className="flex justify-between items-center w-full font-semibold uppercase text-left px-4 py-2 text-xs"
+                    >
+                      <span>{label}</span>
+                      {designOpen ? <AiOutlineMinus /> : <AiOutlinePlus />}
+                    </button>
+                    {designOpen && (
+                      <div className="flex flex-col pl-4 transition-all duration-300 ease-in-out font-normal bg-white rounded-xl w-60">
+                        {children.map((child) => (
+                          <NavLink key={child.path} to={child.path}>
+                            {child.label}
+                          </NavLink>
+                        ))}
+                      </div>
+                    )}
+                  </div>
+                ) : (
+                  <NavLink to={path}>{label}</NavLink>
+                )}
+              </div>
+            ))}
           <Link
             to="/project-management"
             className="px-4 py-2 hover:bg-[#f5d9b3] rounded"

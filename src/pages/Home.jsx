@@ -43,7 +43,7 @@ const Home = () => {
             className="text-3xl sm:text-4xl md:text-5xl font-semibold mb-6"
             style={{ textShadow: "2px 4px 4px rgba(0, 0, 0, 0.5)" }}
           >
-            Shaping your Signature Look
+            Shaping Your Signature Look
           </h1>
           <Link to="/style">
             <button className="bg-[#b37558] text-white text-sm sm:text-base md:text-lg hover:scale-95 font-semibold px-6 sm:px-10 py-2 sm:py-3 rounded-full hover:bg-white hover:text-black transition uppercase tracking-widest">

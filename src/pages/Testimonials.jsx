@@ -2,46 +2,74 @@ import React, { useState, useEffect } from "react";
 
 const testimonials = [
   {
-    name: "Sarah M.",
-    quote:
-      "Absolutely stunning designs and excellent project management. My dream space became a reality!",
+    name: "Sameera Dalvi",
     description:
-      "I had the pleasure of working with this amazing team, and they truly brought my vision to life. Every detail was executed with precision and care.",
+      "As an architect i worked with saleha on one of the interior design project. The outcome was brilliant. Client was very pleased with the results. She is very professional!!",
   },
   {
-    name: "James K.",
-    quote:
-      "Professional, creative, and reliable. They understood our vision and executed it perfectly.",
+    name: "Talib",
     description:
-      "The team understood exactly what we needed and delivered it on time. The process was smooth, and the results exceeded our expectations.",
+      "I would like to express my appreciation for the exceptional interior design services provided by Saleha. Her expertise and attention to detail ensured that my home was designed exactly as I envisioned, with every aspect carefully considered. The final result transformed my space into a beautiful and comfortable place to live. Thank you, Saleha, for your outstanding services in Dubai—your recommendations for each design element were truly valuable!",
   },
   {
-    name: "Priya R.",
-    quote:
-      "Beautiful results and seamless process. I highly recommend their team!",
+    name: "HU-729207861",
     description:
-      "From start to finish, the experience was amazing. They delivered high-quality work while keeping me informed every step of the way.",
+      "Excellent service and wouldn’t hesitate to recommend to my family and friends. I have worked on few of their job as structural engineer and they were great in dealing with client requirements and coordinating the site works with rest of disciplines. I strong recommend them!",
   },
   {
-    name: "Sarah M.",
-    quote:
-      "Absolutely stunning designs and excellent project management. My dream space became a reality!",
+    name: "HU-266002337",
     description:
-      "I had the pleasure of working with this amazing team, and they truly brought my vision to life. Every detail was executed with precision and care.",
+      "Saleha and her team recently worked on creating the most beautiful wardrobes. They were extremely efficient and the quality of their craftsmanship was exceptional. I would highly recommend Dwell for any type of renovations around the house!",
   },
   {
-    name: "James K.",
-    quote:
-      "Professional, creative, and reliable. They understood our vision and executed it perfectly.",
+    name: "Ashley Newman",
     description:
-      "The team understood exactly what we needed and delivered it on time. The process was smooth, and the results exceeded our expectations.",
+      "Very helpful with great ideas and concepts for our house, we would highly recommend Saleha and her team that worked with us to help design and decorate our new home. From start to finish, took the time to understand what we wanted. She made life easy by project managing and co-ordinating the works. She was always contactable and responsive taking time to answer any questions ans was professional, considerate and reliable. The finished work is great, better than I ever could have managed. I am grateful to Saleha and the team and look forward to working with them again.",
   },
   {
-    name: "Priya R.",
-    quote:
-      "Beautiful results and seamless process. I highly recommend their team!",
+    name: "Moiz Siawala",
     description:
-      "From start to finish, the experience was amazing. They delivered high-quality work while keeping me informed every step of the way.",
+      "Thanks to Saliha and team for understanding our requirements and providing useful insights into what will work and what wont. The planning application process went smoothly and we got approval for everything we required without any issues.",
+  },
+  {
+    name: "HU-901874817",
+    description:
+      "I wanted to post a review of the decoration project with Dwell Rich( SK). The execution was smooth and timely. I am happy with the final look of the room and corridor. She implemented the project with care and consideration. She managed to find great deals on the accessories and furniture.",
+  },
+  {
+    name: "HU-661104995",
+    description:
+      "Hi, On a completely different note, I would like to share positive feedback about Saleha's Design Service with the group. I am one of the first in the area to try Saleha for a Reception Room upgrade project. The result has been very amazing and has a huge difference to this space in our room. Like Saleha's bold approach to trying new ideas, understanding clients tastes preferences and bringing it all to fruition. Thank you Saleha! Regards Deepa",
+  },
+  {
+    name: "HU-906191751",
+    description:
+      "We are delighted that the project can finally get underway. The service provided by  Saleha, Interior designer, invaluable in terms of finding the right interior designer for our project. They were professional, friendly, knowledgable and helpful throughout and we could not recommend them highly enough. Thank you Saleha for understanding the client preferences and bringing it to all fruition.",
+  },
+  {
+    name: "User",
+    description:
+      "She has been very helpful for kick starting my project with all her services with planning and designing.",
+  },
+  {
+    name: "HU-452831006",
+    description:
+      "Dwell gave an alternative idea for our kitchen layout, arranged for finalised structural drawings and sent a couple of builders to quote on the work. A calm and helpful process - thank you!",
+  },
+  {
+    name: "HU-298729913",
+    description:
+      "We did recently wardrobe and double bed work from this company. Suleha recommended Shinda carpenter and he did extremely good quality, strong furniture job with 100% adherance to scheduled time. Highly recommended.",
+  },
+  {
+    name: "HU-623745579",
+    description:
+      "As a first time buyer, we didn’t have any idea of getting the building work done for an extension and where to start it. But Saleha helped us to understand each step in detail from the rules and regulations, to architecture requirements and the type of construction required in our budget. I would highly recommend their services for anyone in the are of Chessington, Surbiton, Kingston as they can provide a high level of knowledge and a good quality of work.",
+  },
+  {
+    name: "HU-886398553",
+    description:
+      "Very good service by Saleha and team. Keep it up.",
   },
 ];
 
@@ -110,9 +138,6 @@ const Testimonials = () => {
                     “
                   </div>
                   <div>
-                    <p className="text-base sm:text-lg md:text-xl text-black mb-4 font-medium">
-                      {testimonial.quote}
-                    </p>
                     <h4 className="text-[#b37558] font-semibold text-base sm:text-lg">
                       {testimonial.name}
                     </h4>

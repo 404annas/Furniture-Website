@@ -31,7 +31,11 @@ const Footer = () => {
         </div>
 
         <div className="flex space-x-4 justify-center">
-          <a className="text-blue-600 hover:text-blue-800 transition duration-200">
+          <a
+            href="https://www.facebook.com/share/1HrwFQxPmY/?mibextid=wwXIfr"
+            target="_blank"
+            className="text-blue-600 hover:text-blue-800 transition duration-200"
+          >
             <svg
               fill="currentColor"
               strokeLinecap="round"
