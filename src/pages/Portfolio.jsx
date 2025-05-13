@@ -1,9 +1,11 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 const allItems = [
   {
     src: "https://designz.dwell-rich.com/wp-content/uploads/2023/08/DSC00311-scaled-1-1536x1025.jpg",
     title: "Kingston Upon Thames",
+    route: "/p1-kingston-upon-thames",
   },
   {
     src: "https://designz.dwell-rich.com/wp-content/uploads/2023/11/imageedit_16_6242385301.jpg",
@@ -74,11 +76,13 @@ const Portfolio = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {visibleItems.map((item, index) => (
           <div key={index} className="my-4">
-            <img
-              className="w-full h-64 sm:h-80 md:h-96 object-cover rounded-lg shadow-md transition-opacity duration-300 hover:opacity-80"
-              src={item.src}
-              alt={item.title}
-            />
+            <Link to={item.route}>
+              <img
+                className="w-full h-64 sm:h-80 md:h-96 object-cover rounded-lg shadow-md transition-opacity duration-300 hover:opacity-80"
+                src={item.src}
+                alt={item.title}
+              />
+            </Link>
             <h1 className="font-semibold text-lg sm:text-xl text-center mt-2 rbs">
               {item.title}
             </h1>

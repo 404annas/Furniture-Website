@@ -19,6 +19,7 @@ import DVisualisation from "./pages/DVisualisation";
 import PM from "./pages/PM";
 import ContactModal from "./components/ContactModal";
 import StyleContent from "./pages/StyleContent";
+import Portfolio1 from "./pages/Portfolio1";
 
 const App = () => {
   const [showPopup, setShowPopup] = useState(false);
@@ -53,6 +54,7 @@ const App = () => {
           <Route path="/style/:id" element={<StyleContent />} />
           <Route path="/d-visualisation" element={<DVisualisation />} />
           <Route path="/project-management" element={<PM />} />
+          <Route path="/p1-kingston-upon-thames" element={<Portfolio1 />} />
         </Route>
       </Routes>
     </>
