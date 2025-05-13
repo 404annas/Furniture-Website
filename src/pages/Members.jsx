@@ -13,18 +13,28 @@ const Members = () => {
       <div className="flex flex-wrap items-center justify-center gap-6 mb-4">
         <img
           className="w-3/4 sm:w-1/2 md:w-1/3 lg:w-1/4 max-w-xs object-contain"
-          src="src/assets/BIID_Appellation_ASSOC_2016_AW-BLACK.png"
+          src="src\assets\Logo 0.png"
           alt="BIID Member"
         />
         <img
           className="w-3/4 sm:w-1/2 md:w-1/3 lg:w-1/4 max-w-xs object-contain"
-          src="src/assets/Kingston Chamber Logo Member.jpg"
+          src="src\assets\Logo 4.jpg"
           alt="Kingston Chamber Logo"
         />
         <img
           className="w-3/4 sm:w-1/2 md:w-1/3 lg:w-1/4 max-w-xs object-contain"
-          src="src/assets/Kingston Chamber Logo Member.jpg"
-          alt="Kingston Chamber Logo"
+          src="src\assets\Logo 1.PNG"
+          alt="Logo 1"
+        />
+        <img
+          className="w-3/4 sm:w-1/2 md:w-1/3 lg:w-1/4 max-w-xs object-contain"
+          src="src\assets\Logo 2.PNG"
+          alt="Logo 2"
+        />
+        <img
+          className="w-3/4 sm:w-1/2 md:w-1/3 lg:w-1/4 max-w-xs object-contain"
+          src="src\assets\Logo 3.PNG"
+          alt="Logo 3"
         />
       </div>
     </section>

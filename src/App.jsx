@@ -18,6 +18,7 @@ import Style from "./pages/Style";
 import DVisualisation from "./pages/DVisualisation";
 import PM from "./pages/PM";
 import ContactModal from "./components/ContactModal";
+import StyleContent from "./pages/StyleContent";
 
 const App = () => {
   const [showPopup, setShowPopup] = useState(false);
@@ -49,6 +50,7 @@ const App = () => {
           <Route path="/lightning" element={<Lightning />} />
           <Route path="/automation" element={<Automation />} />
           <Route path="/style" element={<Style />} />
+          <Route path="/style/:id" element={<StyleContent />} />
           <Route path="/d-visualisation" element={<DVisualisation />} />
           <Route path="/project-management" element={<PM />} />
         </Route>

@@ -60,14 +60,21 @@ const ContactModal = () => {
 
   return (
     <div className="fixed inset-0 bg-black bg-opacity-70 z-50 flex items-center justify-center p-4 lg:pt-28 md:pt-32 sm:pt-32 pt-32">
-      <div className="bg-white w-full max-w-4xl sm:max-h-[80vh] max-h-[75vh] overflow-y-auto rounded-2xl shadow-xl p-4 sm:p-8">
-        <button
-          onClick={handleClose}
-          className="absolute lg:bottom-[430px] lg:left-[1090px] md:bottom-[470px] md:right-20 bottom-[370px] left-[270px] sm:text-2xl text-lg text-gray-600 hover:text-black transition"
-          aria-label="Close"
-        >
-          <IoMdClose />
-        </button>
+      <div className="bg-[#F7E7CE] w-full max-w-4xl sm:max-h-[80vh] max-h-[75vh] overflow-y-auto rounded-2xl shadow-xl p-4 sm:p-8">
+        <div className="flex items-center justify-between sm:mb-4 mb-4">
+          <img
+            className="w-10 h-8"
+            src="https://designz.dwell-rich.com/wp-content/uploads/2023/06/DR_set-removebg-preview-e1701030039725.png"
+            alt="Logo"
+          />
+          <button
+            onClick={handleClose}
+            className="sm:text-2xl text-lg text-gray-600 hover:text-black transition"
+            aria-label="Close"
+          >
+            <IoMdClose className="text-[#b37558]" />
+          </button>
+        </div>
 
         <h2 className="text-xl sm:text-2xl font-semibold mb-6 text-center">
           Enter Your Details
@@ -82,7 +89,7 @@ const ContactModal = () => {
                 <input
                   type="text"
                   {...register("name", { required: "Name is required" })}
-                  className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#b37558]"
                 />
                 {errors.name && (
                   <p className="text-red-600 text-sm mt-1">
@@ -102,7 +109,7 @@ const ContactModal = () => {
                       message: "Invalid email address",
                     },
                   })}
-                  className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#b37558]"
                 />
                 {errors.email && (
                   <p className="text-red-600 text-sm mt-1">
@@ -124,7 +131,7 @@ const ContactModal = () => {
                     required: "Phone is required",
                     minLength: { value: 11, message: "Invalid phone number" },
                   })}
-                  className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#b37558]"
                 />
                 {errors.phone && (
                   <p className="text-red-600 text-sm mt-1">
@@ -140,7 +147,7 @@ const ContactModal = () => {
                 <textarea
                   {...register("message", { required: "Message is required" })}
                   rows="4"
-                  className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500 resize-none"
+                  className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#b37558] resize-none"
                 />
                 {errors.message && (
                   <p className="text-red-600 text-sm mt-1">
@@ -153,7 +160,7 @@ const ContactModal = () => {
 
           <button
             type="submit"
-            className="w-full bg-blue-600 text-white py-2.5 rounded-lg font-semibold hover:bg-blue-700 transition-all duration-200 flex items-center justify-center"
+            className="w-full bg-[#b37558] text-white py-2.5 rounded-lg font-semibold hover:scale-95 transition-all duration-200 flex items-center justify-center"
             disabled={isSubmitting}
           >
             {isSubmitting ? (
