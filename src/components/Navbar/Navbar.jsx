@@ -18,9 +18,9 @@ const navItems = [
     ],
   },
   { path: "/portfolio", label: "Portfolio" },
-  { path: "/portfolio", label: "Kitchen" },
-  { path: "/blogs", label: "Bathroom" },
-  { path: "/about", label: "Consultation" },
+  { path: "/kitchens", label: "Kitchen" },
+  { path: "/bathrooms", label: "Bathroom" },
+  { path: "/design-consultation", label: "Consultation" },
   { path: "/blogs", label: "Blog" },
 ];
 

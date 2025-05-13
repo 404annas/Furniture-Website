@@ -1,4 +1,69 @@
 import React from "react";
+import { Gallery, Item } from "react-photoswipe-gallery";
+import "photoswipe/style.css";
+
+const imageData = [
+  {
+    src: "https://images.unsplash.com/photo-1556911220-bff31c812dba?w=1200",
+    thumbnail:
+      "https://images.unsplash.com/photo-1556911220-bff31c812dba?w=500",
+    alt: "Kitchen 1",
+  },
+  {
+    src: "https://images.unsplash.com/photo-1484154218962-a197022b5858?w=1200",
+    thumbnail:
+      "https://images.unsplash.com/photo-1484154218962-a197022b5858?w=500",
+    alt: "Kitchen 2",
+  },
+  {
+    src: "https://images.unsplash.com/photo-1507089947368-19c1da9775ae?w=1200",
+    thumbnail:
+      "https://images.unsplash.com/photo-1507089947368-19c1da9775ae?w=500",
+    alt: "Kitchen 3",
+  },
+  {
+    src: "https://images.unsplash.com/photo-1622372738946-62e02505feb3?w=1200",
+    thumbnail:
+      "https://images.unsplash.com/photo-1622372738946-62e02505feb3?w=500",
+    alt: "Kitchen 4",
+  },
+  {
+    src: "https://plus.unsplash.com/premium_photo-1661962720375-ce9097fb4d69?w=1200",
+    thumbnail:
+      "https://plus.unsplash.com/premium_photo-1661962720375-ce9097fb4d69?w=500",
+    alt: "Kitchen 5",
+  },
+  {
+    src: "https://images.unsplash.com/photo-1600489000022-c2086d79f9d4?w=1200",
+    thumbnail:
+      "https://images.unsplash.com/photo-1600489000022-c2086d79f9d4?w=500",
+    alt: "Kitchen 6",
+  },
+  {
+    src: "https://images.unsplash.com/photo-1556910096-6f5e72db6803?w=1200",
+    thumbnail:
+      "https://images.unsplash.com/photo-1556910096-6f5e72db6803?w=500",
+    alt: "Kitchen 7",
+  },
+  {
+    src: "https://images.unsplash.com/photo-1588854337236-6889d631faa8?w=1200",
+    thumbnail:
+      "https://images.unsplash.com/photo-1588854337236-6889d631faa8?w=500",
+    alt: "Kitchen 8",
+  },
+  {
+    src: "https://plus.unsplash.com/premium_photo-1661317296820-16fd638ee06f?w=1200",
+    thumbnail:
+      "https://plus.unsplash.com/premium_photo-1661317296820-16fd638ee06f?w=500",
+    alt: "Kitchen 9",
+  },
+  {
+    src: "https://images.unsplash.com/photo-1600684388091-627109f3cd60?w=1200",
+    thumbnail:
+      "https://images.unsplash.com/photo-1600684388091-627109f3cd60?w=500",
+    alt: "Kitchen 10",
+  },
+];
 
 const Kitchens = () => {
   return (
@@ -45,58 +110,30 @@ const Kitchens = () => {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mx-4 sm:mx-16 my-12 cursor-pointer">
-        <img
-          src="https://images.unsplash.com/photo-1556911220-bff31c812dba?w=500&auto=format&fit=crop&q=120"
-          alt="Kitchen 1"
-          className="w-full h-64 sm:h-80 lg:h-96 object-cover rounded-lg transition-opacity duration-300 hover:opacity-80"
-        />
-        <img
-          src="https://images.unsplash.com/photo-1484154218962-a197022b5858?w=500&auto=format&fit=crop&q=120"
-          alt="Kitchen 2"
-          className="w-full h-64 sm:h-80 lg:h-96 object-cover rounded-lg transition-opacity duration-300 hover:opacity-80"
-        />
-        <img
-          src="https://images.unsplash.com/photo-1507089947368-19c1da9775ae?w=500&auto=format&fit=crop&q=120&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8a2l0Y2hlbnxlbnwwfHwwfHx8MA%3D%3D"
-          alt="Kitchen 3"
-          className="w-full h-64 sm:h-80 lg:h-96 object-cover rounded-lg transition-opacity duration-300 hover:opacity-80"
-        />
-        <img
-          src="https://images.unsplash.com/photo-1622372738946-62e02505feb3?w=500&auto=format&fit=crop&q=120&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8a2l0Y2hlbnxlbnwwfHwwfHx8MA%3D%3D"
-          alt="Kitchen 4"
-          className="w-full h-64 sm:h-80 lg:h-96 object-cover rounded-lg transition-opacity duration-300 hover:opacity-80"
-        />
-        <img
-          src="https://plus.unsplash.com/premium_photo-1661962720375-ce9097fb4d69?w=500&auto=format&fit=crop&q=120&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGtpdGNoZW58ZW58MHx8MHx8fDA%3D"
-          alt="Kitchen 5"
-          className="w-full h-64 sm:h-80 lg:h-96 object-cover rounded-lg transition-opacity duration-300 hover:opacity-80"
-        />
-        <img
-          src="https://images.unsplash.com/photo-1600489000022-c2086d79f9d4?w=500&auto=format&fit=crop&q=120&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8a2l0Y2hlbnxlbnwwfHwwfHx8MA%3D%3D"
-          alt="Kitchen 6"
-          className="w-full h-64 sm:h-80 lg:h-96 object-cover rounded-lg transition-opacity duration-300 hover:opacity-80"
-        />
-        <img
-          src="https://images.unsplash.com/photo-1556910096-6f5e72db6803?w=500&auto=format&fit=crop&q=120&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGtpdGNoZW58ZW58MHx8MHx8fDA%3D"
-          alt="Kitchen 7"
-          className="w-full h-64 sm:h-80 lg:h-96 object-cover rounded-lg transition-opacity duration-300 hover:opacity-80"
-        />
-        <img
-          src="https://images.unsplash.com/photo-1588854337236-6889d631faa8?w=500&auto=format&fit=crop&q=120&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGtpdGNoZW58ZW58MHx8MHx8fDA%3D"
-          alt="Kitchen 8"
-          className="w-full h-64 sm:h-80 lg:h-96 object-cover rounded-lg transition-opacity duration-300 hover:opacity-80"
-        />
-        <img
-          src="https://plus.unsplash.com/premium_photo-1661317296820-16fd638ee06f?w=500&auto=format&fit=crop&q=120&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGtpdGNoZW58ZW58MHx8MHx8fDA%3D"
-          alt="Kitchen 9"
-          className="w-full h-64 sm:h-80 lg:h-96 object-cover rounded-lg transition-opacity duration-300 hover:opacity-80"
-        />
-        <img
-          src="https://images.unsplash.com/photo-1600684388091-627109f3cd60?w=500&auto=format&fit=crop&q=120&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGtpdGNoZW58ZW58MHx8MHx8fDA%3D"
-          alt="Kitchen 10"
-          className="w-full h-64 sm:h-80 lg:h-96 object-cover rounded-lg transition-opacity duration-300 hover:opacity-80"
-        />
-      </div>
+      <Gallery>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mx-4 sm:mx-16 my-12 cursor-pointer">
+          {imageData.map((img, index) => (
+            <Item
+              key={index}
+              original={img.src}
+              thumbnail={img.thumbnail}
+              width="1200"
+              height="800"
+              title={img.alt}
+            >
+              {({ ref, open }) => (
+                <img
+                  ref={ref}
+                  onClick={open}
+                  src={img.thumbnail}
+                  alt={img.alt}
+                  className="w-full h-64 sm:h-80 lg:h-96 object-cover rounded-lg transition-opacity duration-300 hover:opacity-80"
+                />
+              )}
+            </Item>
+          ))}
+        </div>
+      </Gallery>
     </section>
   );
 };

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { FaDesktop, FaUtensils, FaBed, FaBath } from "react-icons/fa";
 
@@ -253,6 +253,21 @@ const StyleContent = () => {
   const [activeCardIndex, setActiveCardIndex] = useState(null);
   const [isClosing, setIsClosing] = useState(false);
 
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  useEffect(() => {
+    if (isModalOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+
+    // Cleanup on component unmount
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [isModalOpen]);
+
   if (!style) {
     return (
       <div className="text-center mt-20 text-red-500">Style not found.</div>
@@ -305,6 +320,7 @@ const StyleContent = () => {
                   onClick={() => {
                     setActiveCardIndex(i);
                     setShowModal(true);
+                    setIsModalOpen(true);
                   }}
                 >
                   Explore More
@@ -333,6 +349,7 @@ const StyleContent = () => {
                 setTimeout(() => {
                   setShowModal(false);
                   setIsClosing(false);
+                  setIsModalOpen(false);
                 }, 500);
               }}
             >

@@ -10,8 +10,6 @@ const ContactModal = () => {
     reset,
   } = useForm();
 
-  //   const [isFormOpen, setIsFormOpen] = useState(true);
-
   const [isFormOpen, setIsFormOpen] = useState(() => {
     return !localStorage.getItem("hasVisited");
   });

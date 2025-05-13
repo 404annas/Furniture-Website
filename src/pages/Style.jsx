@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 const styleImages = [
@@ -35,6 +35,42 @@ const styleImages = [
 ];
 
 const Style = () => {
+  const [showModal, setShowModal] = useState(false);
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+
+  // Check localStorage on first load
+  useEffect(() => {
+    const filled = localStorage.getItem("styleFormFilled");
+    if (!filled) {
+      setShowModal(true);
+      document.body.style.overflow = "hidden"; // Prevent scroll
+    }
+  }, []);
+
+  // Handle form submission
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (name.trim() && email.trim()) {
+      localStorage.setItem("styleFormFilled", "true");
+      setShowModal(false);
+      document.body.style.overflow = "auto"; // Re-enable scroll
+    } else {
+      alert("Please enter both name and email.");
+    }
+
+    const adminPhoneNumber = import.meta.env.VITE_ADMIN_PHONE;
+
+    const whatsappMessage = `Hello Saleha,%0A%0AI am:%0A%0AName: ${name}%0AEmail: ${email}`;
+
+    const whatsappURL = `https://wa.me/${adminPhoneNumber}?text=${whatsappMessage}`;
+
+    window.open(whatsappURL, "_blank");
+
+    setName("");
+    setEmail("");
+  };
+
   return (
     <section>
       {/* Hero Section */}
@@ -67,6 +103,42 @@ const Style = () => {
           </Link>
         ))}
       </div>
+
+      {/* Modal Form */}
+      {showModal && (
+        <div className="fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center z-50">
+          <form
+            onSubmit={handleSubmit}
+            className="bg-[#F7E7CE] p-6 sm:p-8 rounded-xl w-[90%] max-w-md shadow-xl space-y-4 overflow-y-auto max-h-[90vh]"
+          >
+            <h2 className="text-xl font-semibold mb-2 text-center">
+              Please Enter Your Details
+            </h2>
+            <input
+              type="text"
+              placeholder="Your Name"
+              className="w-full p-2 outline-none rounded"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+              required
+            />
+            <input
+              type="email"
+              placeholder="Your Email"
+              className="w-full p-2 outline-none rounded"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              required
+            />
+            <button
+              type="submit"
+              className="w-full bg-[#a1684e] text-white py-2 px-4 rounded hover:bg-[#8b523d] transition"
+            >
+              Submit
+            </button>
+          </form>
+        </div>
+      )}
     </section>
   );
 };
