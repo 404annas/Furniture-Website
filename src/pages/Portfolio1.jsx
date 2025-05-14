@@ -11,78 +11,76 @@ const images = [
     caption: "Modern Kitchen",
   },
   {
-    src: "https://designz.dwell-rich.com/wp-content/uploads/2023/08/WhatsApp-Image-2023-08-22-at-4.06.43-PM-1.jpeg",
+    src: "https://designz.dwell-rich.com/wp-content/uploads/2023/08/WhatsApp-Image-2023-08-22-at-4.06.43-PM-2.jpeg",
     width: 1600,
     height: 1200,
     caption: "Stylish Living Room",
   },
   {
-    src: "https://designz.dwell-rich.com/wp-content/uploads/2023/08/WhatsApp-Image-2023-08-22-at-4.06.43-PM-1.jpeg",
+    src: "https://designz.dwell-rich.com/wp-content/uploads/2023/08/WhatsApp-Image-2023-08-22-at-4.06.43-PM-3.jpeg",
     width: 1600,
     height: 1200,
     caption: "Luxury Bathroom",
   },
   {
-    src: "https://designz.dwell-rich.com/wp-content/uploads/2023/08/WhatsApp-Image-2023-08-22-at-4.06.43-PM-1.jpeg",
+    src: "https://designz.dwell-rich.com/wp-content/uploads/2023/08/WhatsApp-Image-2023-08-22-at-4.06.43-PM.jpeg",
     width: 1600,
     height: 1200,
     caption: "Luxury Bathroom",
   },
   {
-    src: "https://designz.dwell-rich.com/wp-content/uploads/2023/08/WhatsApp-Image-2023-08-22-at-4.06.43-PM-1.jpeg",
+    src: "https://designz.dwell-rich.com/wp-content/uploads/2023/08/WhatsApp-Image-2023-08-22-at-4.06.44-PM-1.jpeg",
     width: 1600,
     height: 1200,
     caption: "Luxury Bathroom",
   },
   {
-    src: "https://designz.dwell-rich.com/wp-content/uploads/2023/08/WhatsApp-Image-2023-08-22-at-4.06.43-PM-1.jpeg",
+    src: "https://designz.dwell-rich.com/wp-content/uploads/2023/08/WhatsApp-Image-2023-08-22-at-4.06.44-PM-2.jpeg",
     width: 1600,
     height: 1200,
     caption: "Luxury Bathroom",
   },
   {
-    src: "https://designz.dwell-rich.com/wp-content/uploads/2023/08/WhatsApp-Image-2023-08-22-at-4.06.43-PM-1.jpeg",
+    src: "https://designz.dwell-rich.com/wp-content/uploads/2023/08/WhatsApp-Image-2023-08-22-at-4.06.44-PM.jpeg",
     width: 1600,
     height: 1200,
     caption: "Luxury Bathroom",
   },
   {
-    src: "https://designz.dwell-rich.com/wp-content/uploads/2023/08/WhatsApp-Image-2023-08-22-at-4.06.43-PM-1.jpeg",
+    src: "https://designz.dwell-rich.com/wp-content/uploads/2023/08/WhatsApp-Image-2023-08-22-at-4.06.45-PM-1.jpeg",
     width: 1600,
     height: 1200,
     caption: "Luxury Bathroom",
   },
   {
-    src: "https://designz.dwell-rich.com/wp-content/uploads/2023/08/WhatsApp-Image-2023-08-22-at-4.06.43-PM-1.jpeg",
+    src: "https://designz.dwell-rich.com/wp-content/uploads/2023/08/WhatsApp-Image-2023-08-22-at-4.06.45-PM-2.jpeg",
     width: 1600,
     height: 1200,
     caption: "Luxury Bathroom",
   },
   {
-    src: "https://designz.dwell-rich.com/wp-content/uploads/2023/08/WhatsApp-Image-2023-08-22-at-4.06.43-PM-1.jpeg",
+    src: "https://designz.dwell-rich.com/wp-content/uploads/2023/08/WhatsApp-Image-2023-08-22-at-4.06.45-PM.jpeg",
     width: 1600,
     height: 1200,
     caption: "Luxury Bathroom",
   },
   {
-    src: "https://designz.dwell-rich.com/wp-content/uploads/2023/08/WhatsApp-Image-2023-08-22-at-4.06.43-PM-1.jpeg",
+    src: "https://designz.dwell-rich.com/wp-content/uploads/2023/08/WhatsApp-Image-2023-08-22-at-4.06.46-PM.jpeg",
     width: 1600,
     height: 1200,
     caption: "Luxury Bathroom",
   },
   {
-    src: "https://designz.dwell-rich.com/wp-content/uploads/2023/08/WhatsApp-Image-2023-08-22-at-4.06.43-PM-1.jpeg",
+    src: "https://designz.dwell-rich.com/wp-content/uploads/2023/08/WhatsApp-Image-2023-08-22-at-4.06.44-PM-2.jpeg",
     width: 1600,
     height: 1200,
     caption: "Luxury Bathroom",
   },
-  // Add more images here later
 ];
 
 const Portfolio1 = () => {
   return (
     <section>
-      {/* Header with background */}
       <div className="relative h-[350px] flex items-center justify-center text-center">
         <div
           className="absolute inset-0 bg-cover bg-center"
@@ -126,7 +124,7 @@ const Portfolio1 = () => {
       </div>
 
       {/* Description */}
-      <div className="mx-6 md:mx-32 text-center my-10 text-base md:text-lg text-gray-800 leading-relaxed">
+      <div className="mx-6 md:mx-32 text-center my-10 text-base md:text-lg text-black rb leading-relaxed">
         <p>
           Based in the Royal Borough of Kingston, it is a Modern Home Oasis,
           renovated by Exclusif Desingz with a focus on minimalism,
