@@ -5,44 +5,44 @@ import { Link } from "react-router-dom";
 
 const images = [
   {
-    src: "https://st.hzcdn.com/fimgs/e47117ff06ab9def_9638-w312-h312-b0-p0---kitchen.jpg",
+    src: "https://st.hzcdn.com/fimgs/07114a7f07d95ad9_6206-w312-h312-b0-p0---living-room.jpg",
     width: 1600,
     height: 1200,
     caption: "Modern ",
   },
   {
-    src: "https://designz.dwell-rich.com/wp-content/uploads/2024/12/WhatsApp-Image-2024-12-12-at-12.28.42-PM-2.jpeg.jpg",
+    src: "https://st.hzcdn.com/fimgs/8551bcb507d95ae1_7861-w312-h312-b0-p0---living-room.jpg",
     width: 1600,
     height: 1200,
     caption: "Luxury ",
   },
   {
-    src: "https://designz.dwell-rich.com/wp-content/uploads/2024/12/WhatsApp-Image-2024-12-12-at-12.28.42-PM-4.jpeg.jpg",
+    src: "https://st.hzcdn.com/fimgs/7fe17fe707d95ae9_6089-w312-h312-b0-p0---living-room.jpg",
     width: 1600,
     height: 1200,
     caption: "Luxury ",
   },
   {
-    src: "https://designz.dwell-rich.com/wp-content/uploads/2024/12/WhatsApp-Image-2024-12-12-at-12.28.43-PM-1.jpeg.jpg",
+    src: "https://st.hzcdn.com/fimgs/eea1a21807d95af8_5698-w312-h312-b0-p0---utility-room.jpg",
     width: 1600,
     height: 1200,
     caption: "Luxury ",
   },
   {
-    src: "https://designz.dwell-rich.com/wp-content/uploads/2024/12/WhatsApp-Image-2024-12-12-at-12.28.43-PM-4.jpeg.jpg",
+    src: "https://st.hzcdn.com/fimgs/f9018ef807d95b00_6089-w312-h312-b0-p0---utility-room.jpg",
     width: 1600,
     height: 1200,
     caption: "Luxury ",
   },
-    {
-      src: "https://designz.dwell-rich.com/wp-content/uploads/2024/12/WhatsApp-Image-2024-12-12-at-12.28.42-PM.jpeg.jpg",
-      width: 1600,
-      height: 1200,
-      caption: "Luxury ",
-    },
+  {
+    src: "https://st.hzcdn.com/fimgs/4aa11eb407d95b06_7879-w312-h312-b0-p0---garage.jpg",
+    width: 1600,
+    height: 1200,
+    caption: "Luxury ",
+  },
 ];
 
-const Portfolio6 = () => {
+const Portfolio16 = () => {
   return (
     <section className="px-4 sm:px-6 md:px-12 lg:px-20 py-10">
       <div className="text-center my-8 sm:my-12 md:my-16">
@@ -50,7 +50,7 @@ const Portfolio6 = () => {
           className="text-[#b37558] text-3xl sm:text-4xl font-semibold rbs"
           style={{ textShadow: "2px 4px 4px rgba(0, 0, 0, 0.5)" }}
         >
-          Modern Kitchens
+          Sutton, London- Contemporary Style Extension & Renovation
         </h1>
       </div>
 
@@ -116,4 +116,4 @@ const Portfolio6 = () => {
   );
 };
 
-export default Portfolio6;
+export default Portfolio16;

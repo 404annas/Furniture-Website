@@ -5,44 +5,14 @@ import { Link } from "react-router-dom";
 
 const images = [
   {
-    src: "https://st.hzcdn.com/fimgs/e47117ff06ab9def_9638-w312-h312-b0-p0---kitchen.jpg",
+    src: "https://st.hzcdn.com/fimgs/eef1ac5a06ab9e45_3260-w312-h312-b0-p0---wine-cellar.jpg",
     width: 1600,
     height: 1200,
     caption: "Modern ",
   },
-  {
-    src: "https://designz.dwell-rich.com/wp-content/uploads/2024/12/WhatsApp-Image-2024-12-12-at-12.28.42-PM-2.jpeg.jpg",
-    width: 1600,
-    height: 1200,
-    caption: "Luxury ",
-  },
-  {
-    src: "https://designz.dwell-rich.com/wp-content/uploads/2024/12/WhatsApp-Image-2024-12-12-at-12.28.42-PM-4.jpeg.jpg",
-    width: 1600,
-    height: 1200,
-    caption: "Luxury ",
-  },
-  {
-    src: "https://designz.dwell-rich.com/wp-content/uploads/2024/12/WhatsApp-Image-2024-12-12-at-12.28.43-PM-1.jpeg.jpg",
-    width: 1600,
-    height: 1200,
-    caption: "Luxury ",
-  },
-  {
-    src: "https://designz.dwell-rich.com/wp-content/uploads/2024/12/WhatsApp-Image-2024-12-12-at-12.28.43-PM-4.jpeg.jpg",
-    width: 1600,
-    height: 1200,
-    caption: "Luxury ",
-  },
-    {
-      src: "https://designz.dwell-rich.com/wp-content/uploads/2024/12/WhatsApp-Image-2024-12-12-at-12.28.42-PM.jpeg.jpg",
-      width: 1600,
-      height: 1200,
-      caption: "Luxury ",
-    },
 ];
 
-const Portfolio6 = () => {
+const Portfolio17 = () => {
   return (
     <section className="px-4 sm:px-6 md:px-12 lg:px-20 py-10">
       <div className="text-center my-8 sm:my-12 md:my-16">
@@ -50,7 +20,7 @@ const Portfolio6 = () => {
           className="text-[#b37558] text-3xl sm:text-4xl font-semibold rbs"
           style={{ textShadow: "2px 4px 4px rgba(0, 0, 0, 0.5)" }}
         >
-          Modern Kitchens
+          Wine cellar in Leatherhead
         </h1>
       </div>
 
@@ -82,7 +52,7 @@ const Portfolio6 = () => {
 
       <div className="px-4 sm:px-8 md:px-20 py-10">
         <Gallery>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+          <div className="grid grid-cols-1">
             {images.map((img, index) => (
               <Item
                 key={index}
@@ -98,7 +68,7 @@ const Portfolio6 = () => {
                     onClick={open}
                     src={img.src}
                     alt={img.caption || `Image ${index + 1}`}
-                    className="w-full h-60 sm:h-64 object-cover rounded-md cursor-pointer shadow hover:scale-105 transition-transform duration-200"
+                    className="w-full h-[500px] object-fit rounded-md cursor-pointer shadow hover:scale-105 transition-transform duration-200"
                   />
                 )}
               </Item>
@@ -116,4 +86,4 @@ const Portfolio6 = () => {
   );
 };
 
-export default Portfolio6;
+export default Portfolio17;
