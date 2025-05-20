@@ -56,13 +56,13 @@ const Portfolio6 = () => {
 
       <div className="flex flex-col gap-6 text-base sm:text-lg text-black text-center max-w-4xl mx-auto px-4 sm:px-6">
         <p>
-          At our company, we view kitchens as the heart of every home, where
+          At our company, we view Modern Kitchens as the heart of every home, where
           families gather, memories are made, and culinary adventures unfold.
           Our portfolio showcases kitchens designed to stand the test of time,
           with timeless aesthetics that transcend fleeting trends.
         </p>
         <p>
-          In each kitchen, you’ll find elegant handles adorning cabinets and
+          In each Modern Kitchen, you’ll find elegant handles adorning cabinets and
           drawers, meticulously selected to complement the overall design while
           offering a touch of sophistication.
         </p>
@@ -73,7 +73,7 @@ const Portfolio6 = () => {
           both beauty and functionality.
         </p>
         <p>
-          In essence, our kitchens are more than just spaces for cooking;
+          In essence, our Modern Kitchens are more than just spaces for cooking;
           they’re sanctuaries where families come together, where design meets
           functionality, and where every detail is thoughtfully considered to
           create a truly exceptional living experience.
