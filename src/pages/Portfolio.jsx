@@ -44,13 +44,13 @@ const allItems = [
   },
   {
     src: "https://designz.dwell-rich.com/wp-content/uploads/2024/12/a9f143eb06c90d47_0099-w378-h378-b0-p0-contemporary-living-room.webp",
-    title: "Conservatory Croydon",
-    route: "/p12-conservatory-croydon",
+    title: "Seven bed high-end project, Sutton",
+    route: "/p11-seven-bed",
   },
   {
     src: "https://designz.dwell-rich.com/wp-content/uploads/2024/12/home-design-1-1536x1440.jpg",
-    title: "Seven bed high-end project, Sutton",
-    route: "/p11-seven-bed",
+    title: "Conservatory Croydon",
+    route: "/p12-conservatory-croydon",
   },
   {
     src: "https://designz.dwell-rich.com/wp-content/uploads/2024/12/WhatsApp-Image-2024-12-12-at-12.29.11-PM.jpeg-1536x1152.jpg",

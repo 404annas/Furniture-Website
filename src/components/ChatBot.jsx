@@ -15,9 +15,11 @@ const ChatBot = () => {
         configuration: {
           composerPlaceholder: "Hey!",
           botName: "Desingz",
-          botAvatar: "https://files.bpcontent.cloud/2025/05/20/05/20250520051638-ZBX1HLVX.png",
+          botAvatar:
+            "https://files.bpcontent.cloud/2025/05/20/05/20250520051638-ZBX1HLVX.png",
           botDescription: "We Create Custom Desingz...",
-          fabImage: "https://files.bpcontent.cloud/2025/05/20/05/20250520051721-VE4QMDV0.png",
+          fabImage:
+            "https://files.bpcontent.cloud/2025/05/20/05/20250520051721-VE4QMDV0.png",
           color: "#ffc53d",
           variant: "soft",
           themeMode: "dark",
@@ -29,7 +31,10 @@ const ChatBot = () => {
 
       window.botpressWebChat.onEvent(
         function (event) {
-          if (event.type === "MESSAGE.RECEIVED" || event.type === "MESSAGE.SENT") {
+          if (
+            event.type === "MESSAGE.RECEIVED" ||
+            event.type === "MESSAGE.SENT"
+          ) {
             const message = event.payload.text;
             const sender = event.type === "MESSAGE.SENT" ? "User" : "Bot";
             allMessages.push(`${sender}: ${message}`);

@@ -15,7 +15,7 @@ const Footer = () => {
 
         <div className="flex flex-col items-center justify-center gap-2">
           <p className="text-xs sm:text-sm font-medium text-center sm:text-left">
-            T&C Says Exclusif Designz | —
+            Dwell-Rich Designz | —
             <a
               className="ml-1 underline hover:text-[#18110e] transition duration-200"
               href="/"
