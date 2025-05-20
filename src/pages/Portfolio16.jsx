@@ -3,6 +3,8 @@ import { Gallery, Item } from "react-photoswipe-gallery";
 import "photoswipe/style.css";
 import { Link } from "react-router-dom";
 
+import Before2 from "../assets/Before2.jpg";
+
 const Portfolio16 = () => {
   return (
     <section className="px-4 sm:px-6 md:px-12 lg:px-20 py-10">
@@ -54,7 +56,7 @@ const Portfolio16 = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 px-4 sm:px-6 md:px-12 my-12">
         <Link to="/sutton-london-before" className="relative group">
           <img
-            src="https://st.hzcdn.com/fimgs/07114a7f07d95ad9_6206-w312-h312-b0-p0---living-room.jpg"
+            src={Before2}
             alt="After"
             className="w-full h-64 sm:h-80 md:h-96 object-cover rounded-lg shadow-lg group-hover:opacity-90 transition duration-200"
           />
