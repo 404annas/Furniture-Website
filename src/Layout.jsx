@@ -15,6 +15,7 @@ const Layout = () => {
       <Footer />
       <ChatBot />
       <ChatBotWelcomeMsg />
+      
     </div>
   );
 };

@@ -1,12 +1,17 @@
 import React, { useEffect } from "react";
 
 const ChatBot = () => {
+  const adminNumber = "923272695806";
+
+  const openWhatsApp = () => {
+    const url = `https://wa.me/${adminNumber}`;
+    window.open(url, "_blank");
+  };
+
   useEffect(() => {
     const script = document.createElement("script");
     script.src = "https://cdn.botpress.cloud/webchat/v2.5/inject.js";
     script.async = true;
-
-    const allMessages = [];
 
     script.onload = () => {
       window.botpress.init({
@@ -28,28 +33,6 @@ const ChatBot = () => {
           allowFileUpload: false,
         },
       });
-
-      window.botpressWebChat.onEvent(
-        function (event) {
-          if (
-            event.type === "MESSAGE.RECEIVED" ||
-            event.type === "MESSAGE.SENT"
-          ) {
-            const message = event.payload.text;
-            const sender = event.type === "MESSAGE.SENT" ? "User" : "Bot";
-            allMessages.push(`${sender}: ${message}`);
-          }
-        },
-        ["MESSAGE.RECEIVED", "MESSAGE.SENT"]
-      );
-
-      window.sendToWhatsApp = () => {
-        const fullChat = allMessages.join("\n");
-        const encoded = encodeURIComponent(fullChat);
-        const adminNumber = "923272695806"; // Replace with your WhatsApp number
-        const url = `https://wa.me/${adminNumber}?text=${encoded}`;
-        window.open(url, "_blank");
-      };
     };
 
     document.body.appendChild(script);
@@ -61,8 +44,8 @@ const ChatBot = () => {
       <div
         style={{
           position: "fixed",
-          bottom: "70px",
-          right: "20px",
+          bottom: "90px",
+          right: "30px",
           zIndex: 9999,
         }}
       >
@@ -79,16 +62,14 @@ const ChatBot = () => {
             boxShadow: "0 4px 12px rgba(0,0,0,0.2)",
             fontSize: "14px",
             fontWeight: "500",
-            transition: "all 0.3s ease-in-out",
           }}
-          onClick={() => window.sendToWhatsApp()}
+          onClick={openWhatsApp}
         >
           <img
             src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
             alt="WhatsApp"
             style={{ width: "20px", height: "20px" }}
           />
-          <span>Click to share chat with admin</span>
         </div>
       </div>
     </>

@@ -37,6 +37,8 @@ import Portfolio15 from "./pages/Portfolio15";
 import Portfolio16 from "./pages/Portfolio16";
 import Portfolio17 from "./pages/Portfolio17";
 import Portfolio18 from "./pages/Portfolio18";
+import SuttonLondonAfter from "./pages/SuttonLondonAfter";
+import SuttonLondonBefore from "./pages/SuttonLondonBefore";
 
 const App = () => {
   const [showPopup, setShowPopup] = useState(false);
@@ -92,6 +94,8 @@ const App = () => {
           <Route path="/p16-sutton-style" element={<Portfolio16 />} />
           <Route path="/p17-wine-cellar" element={<Portfolio17 />} />
           <Route path="/p18-bespoke-wardrobe" element={<Portfolio18 />} />
+          <Route path="/sutton-london-before" element={<SuttonLondonBefore />} />
+          <Route path="/sutton-london-after" element={<SuttonLondonAfter />} />
         </Route>
       </Routes>
     </>
