@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 import { Outlet } from "react-router-dom";
 import ChatBot from "./components/ChatBot";
+import ChatBotWelcomeMsg from "./components/ChatBotWelcomeMsg";
 
 const Layout = () => {
   return (
@@ -13,6 +14,7 @@ const Layout = () => {
       </main>
       <Footer />
       <ChatBot />
+      <ChatBotWelcomeMsg />
     </div>
   );
 };
