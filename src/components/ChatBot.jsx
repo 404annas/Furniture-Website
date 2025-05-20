@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 
 const ChatBot = () => {
-  const adminNumber = "923272695806";
+  const adminNumber = import.meta.env.VITE_ADMIN_PHONE;
 
   const openWhatsApp = () => {
     const url = `https://wa.me/${adminNumber}`;
