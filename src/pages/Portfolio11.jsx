@@ -23,7 +23,7 @@ const images = [
     caption: "Stylish",
   },
   {
-    src: "https://designz.dwell-rich.com/wp-content/uploads/2024/12/1fe1b6bd06c90d4a_0499-w378-h378-b0-p0-contemporary-spaces.webp",
+    src: "https://designz.dwell-rich.com/wp-content/uploads/2024/12/home-design-1-1536x1440.jpg",
     width: 1600,
     height: 1200,
     caption: "Stylish",

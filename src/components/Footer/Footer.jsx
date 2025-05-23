@@ -19,10 +19,9 @@ const Footer = () => {
             Dwell-Rich Designz | —
             <a
               className="ml-1 underline hover:text-[#18110e] transition duration-200"
-              href="/"
               rel="noopener noreferrer"
             >
-              Exclusifdesignz.co.uk
+              dwell-rich-designz.co.uk
             </a>
           </p>
           <p className="text-xs sm:text-sm font-medium text-center sm:text-left">

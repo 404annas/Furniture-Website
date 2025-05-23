@@ -37,8 +37,8 @@ import Portfolio15 from "./pages/Portfolio15";
 import Portfolio16 from "./pages/Portfolio16";
 import Portfolio17 from "./pages/Portfolio17";
 import Portfolio18 from "./pages/Portfolio18";
-import SuttonLondonAfter from "./pages/SuttonLondonAfter";
-import SuttonLondonBefore from "./pages/SuttonLondonBefore";
+// import SuttonLondonAfter from "./pages/SuttonLondonAfter";
+// import SuttonLondonBefore from "./pages/SuttonLondonBefore";
 
 const App = () => {
   const [showPopup, setShowPopup] = useState(false);
@@ -87,15 +87,15 @@ const App = () => {
           <Route path="/p9-chessingtion-kingston" element={<Portfolio9 />} />
           <Route path="/p10-reception-central" element={<Portfolio10 />} />
           <Route path="/p11-seven-bed" element={<Portfolio11 />} />
-          <Route path="/p12-conservatory-croydon" element={<Portfolio12 />} />
+          {/* <Route path="/p12-conservatory-croydon" element={<Portfolio12 />} /> */}
           <Route path="/p13-surbiton-project" element={<Portfolio13 />} />
           <Route path="/p14-air-mitcham" element={<Portfolio14 />} />
           <Route path="/p15-traditional-kitchens" element={<Portfolio15 />} />
           <Route path="/p16-sutton-style" element={<Portfolio16 />} />
           <Route path="/p17-wine-cellar" element={<Portfolio17 />} />
           <Route path="/p18-bespoke-wardrobe" element={<Portfolio18 />} />
-          <Route path="/sutton-london-before" element={<SuttonLondonBefore />} />
-          <Route path="/sutton-london-after" element={<SuttonLondonAfter />} />
+          {/* <Route path="/sutton-london-before" element={<SuttonLondonBefore />} />
+          <Route path="/sutton-london-after" element={<SuttonLondonAfter />} /> */}
         </Route>
       </Routes>
     </>

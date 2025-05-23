@@ -18,7 +18,7 @@ const allItems = [
     route: "/p16-sutton-style",
   },
   {
-    src: "https://designz.dwell-rich.com/wp-content/uploads/2024/05/WhatsApp-Image-2024-05-06-at-01.58.32_4207f4a0-1536x1152.jpg",
+    src: "https://st.hzcdn.com/fimgs/e47117ff06ab9def_9638-w312-h312-b0-p0---kitchen.jpg",
     title: "Kitchens In Surrey - Modern",
     route: "/p6-modern-kitchens",
   },
@@ -47,11 +47,11 @@ const allItems = [
     title: "Seven bed high-end project, Sutton",
     route: "/p11-seven-bed",
   },
-  {
-    src: "https://designz.dwell-rich.com/wp-content/uploads/2024/12/home-design-1-1536x1440.jpg",
-    title: "Conservatory Croydon",
-    route: "/p12-conservatory-croydon",
-  },
+  // {
+  //   src: "https://designz.dwell-rich.com/wp-content/uploads/2024/12/home-design-1-1536x1440.jpg",
+  //   title: "Conservatory Croydon",
+  //   route: "/p12-conservatory-croydon",
+  // },
   {
     src: "https://designz.dwell-rich.com/wp-content/uploads/2024/12/WhatsApp-Image-2024-12-12-at-12.29.11-PM.jpeg-1536x1152.jpg",
     title: "Surbiton Project Living and Hallway",
@@ -95,13 +95,13 @@ const allItems = [
 ];
 
 const Portfolio = () => {
-  const [visibleCount, setVisibleCount] = useState(6);
+  // const [visibleCount, setVisibleCount] = useState(6);
 
-  const handleLoadMore = () => {
-    setVisibleCount((prev) => prev + 3);
-  };
+  // const handleLoadMore = () => {
+  //   setVisibleCount((prev) => prev + 3);
+  // };
 
-  const visibleItems = allItems.slice(0, visibleCount);
+  // const visibleItems = allItems.slice(0, visibleCount);
 
   return (
     <section className="px-4 sm:px-8 md:px-16 lg:px-28 mb-10">
@@ -115,7 +115,7 @@ const Portfolio = () => {
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        {visibleItems.map((item, index) => (
+        {allItems.map((item, index) => (
           <div key={index} className="my-4">
             <Link to={item.route}>
               <img
@@ -130,17 +130,6 @@ const Portfolio = () => {
           </div>
         ))}
       </div>
-
-      {visibleCount < allItems.length && (
-        <div className="flex items-center justify-center mt-8">
-          <button
-            onClick={handleLoadMore}
-            className="bg-[#b37558] hover:bg-[#a0654d] text-white font-medium px-5 sm:px-6 py-2 sm:py-2.5 rounded-md transition duration-200 text-sm sm:text-base"
-          >
-            Load More
-          </button>
-        </div>
-      )}
     </section>
   );
 };
