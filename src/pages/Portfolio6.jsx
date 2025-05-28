@@ -2,6 +2,7 @@ import React from "react";
 import { Gallery, Item } from "react-photoswipe-gallery";
 import "photoswipe/style.css";
 import { Link } from "react-router-dom";
+import { HiArrowLeft, HiArrowRight } from "react-icons/hi";
 
 const images = [
   {
@@ -34,12 +35,12 @@ const images = [
     height: 1200,
     caption: "Luxury ",
   },
-    {
-      src: "https://designz.dwell-rich.com/wp-content/uploads/2024/12/WhatsApp-Image-2024-12-12-at-12.28.42-PM.jpeg.jpg",
-      width: 1600,
-      height: 1200,
-      caption: "Luxury ",
-    },
+  {
+    src: "https://designz.dwell-rich.com/wp-content/uploads/2024/12/WhatsApp-Image-2024-12-12-at-12.28.42-PM.jpeg.jpg",
+    width: 1600,
+    height: 1200,
+    caption: "Luxury ",
+  },
 ];
 
 const Portfolio6 = () => {
@@ -56,15 +57,15 @@ const Portfolio6 = () => {
 
       <div className="flex flex-col gap-6 text-base sm:text-lg text-black text-center max-w-4xl mx-auto px-4 sm:px-6">
         <p>
-          At our company, we view Modern Kitchens as the heart of every home, where
-          families gather, memories are made, and culinary adventures unfold.
-          Our portfolio showcases kitchens designed to stand the test of time,
-          with timeless aesthetics that transcend fleeting trends.
+          At our company, we view Modern Kitchens as the heart of every home,
+          where families gather, memories are made, and culinary adventures
+          unfold. Our portfolio showcases kitchens designed to stand the test of
+          time, with timeless aesthetics that transcend fleeting trends.
         </p>
         <p>
-          In each Modern Kitchen, you’ll find elegant handles adorning cabinets and
-          drawers, meticulously selected to complement the overall design while
-          offering a touch of sophistication.
+          In each Modern Kitchen, you’ll find elegant handles adorning cabinets
+          and drawers, meticulously selected to complement the overall design
+          while offering a touch of sophistication.
         </p>
         <p>
           Expert joinery is at the core of our designs, reflecting our
@@ -107,11 +108,21 @@ const Portfolio6 = () => {
         </Gallery>
       </div>
 
-      <Link to="/portfolio" className="flex items-center justify-center mb-10">
-        <button className="bg-[#b37558] hover:bg-[#a0654d] rounded-md text-white font-semibold text-sm sm:text-base px-6 py-2 sm:px-8 sm:py-3 transition-all duration-300">
-          Go Back
-        </button>
-      </Link>
+      <div className="flex sm:flex-row items-center justify-between gap-4 mb-10 mt-6 md:px-40 w-full">
+        <Link to={"/p16-sutton-style"} className="w-full sm:w-auto">
+          <button className="w-full sm:w-auto flex items-center justify-center gap-2 bg-[#b37558] hover:bg-[#a0654d] rounded-md text-white font-semibold px-6 py-2">
+            <HiArrowLeft />
+            Previous
+          </button>
+        </Link>
+
+        <Link to="/p15-traditional-kitchens" className="w-full sm:w-auto">
+          <button className="w-full sm:w-auto flex items-center justify-center gap-2 bg-[#b37558] hover:bg-[#a0654d] rounded-md text-white font-semibold px-6 py-2">
+            Next
+            <HiArrowRight />
+          </button>
+        </Link>
+      </div>
     </section>
   );
 };

@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { HiArrowLeft, HiArrowRight } from "react-icons/hi";
 
 const Portfolio8 = () => {
   return (
@@ -44,10 +45,7 @@ const Portfolio8 = () => {
       </div>
 
       <div className="w-full mt-10 mb-20 px-4 sm:px-6 md:px-12">
-        <video
-          controls
-          className="w-full aspect-video rounded-lg object-cover"
-        >
+        <video controls className="w-full aspect-video rounded-lg object-cover">
           <source
             src="https://designz.dwell-rich.com/wp-content/uploads/2024/04/WhatsApp-Video-2024-04-03-at-10.52.54-PM-1.mp4"
             type="video/mp4"
@@ -55,10 +53,18 @@ const Portfolio8 = () => {
         </video>
       </div>
 
-      <div className="flex justify-center mb-10">
-        <Link to="/portfolio">
-          <button className="bg-[#b37558] hover:bg-[#a0654d] rounded-md text-white font-semibold text-sm sm:text-base px-6 py-2 sm:px-8 sm:py-3 transition-all duration-300">
-            Go Back
+      <div className="flex sm:flex-row items-center justify-between gap-4 mb-10 mt-6 md:px-40 w-full">
+        <Link to={"/p15-traditional-kitchens"} className="w-full sm:w-auto">
+          <button className="w-full sm:w-auto flex items-center justify-center gap-2 bg-[#b37558] hover:bg-[#a0654d] rounded-md text-white font-semibold px-6 py-2">
+            <HiArrowLeft />
+            Previous
+          </button>
+        </Link>
+
+        <Link to="/p9-chessingtion-kingston" className="w-full sm:w-auto">
+          <button className="w-full sm:w-auto flex items-center justify-center gap-2 bg-[#b37558] hover:bg-[#a0654d] rounded-md text-white font-semibold px-6 py-2">
+            Next
+            <HiArrowRight />
           </button>
         </Link>
       </div>

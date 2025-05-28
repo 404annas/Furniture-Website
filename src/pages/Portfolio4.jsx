@@ -2,6 +2,7 @@ import React from "react";
 import { Gallery, Item } from "react-photoswipe-gallery";
 import "photoswipe/style.css";
 import { Link } from "react-router-dom";
+import { HiArrowLeft, HiArrowRight } from "react-icons/hi";
 
 const images = [
   {
@@ -77,10 +78,18 @@ const Portfolio4 = () => {
         </p>
       </div>
 
-      <div className="flex items-center justify-center mt-10">
-        <Link to="/portfolio">
-          <button className="bg-[#b37558] hover:bg-[#a0654d] text-white font-medium sm:font-semibold px-5 sm:px-6 py-2 sm:py-2.5 rounded-md text-sm sm:text-base transition duration-200">
-            Go Back
+      <div className="flex sm:flex-row items-center justify-between gap-4 mb-10 mt-6 md:px-40 w-full">
+        <Link to={"/p3-collaborative-hub"} className="w-full sm:w-auto">
+          <button className="w-full sm:w-auto flex items-center justify-center gap-2 bg-[#b37558] hover:bg-[#a0654d] rounded-md text-white font-semibold px-6 py-2">
+            <HiArrowLeft />
+            Previous
+          </button>
+        </Link>
+
+        <Link to="/p7-garden-design-kingston" className="w-full sm:w-auto">
+          <button className="w-full sm:w-auto flex items-center justify-center gap-2 bg-[#b37558] hover:bg-[#a0654d] rounded-md text-white font-semibold px-6 py-2">
+            Next
+            <HiArrowRight />
           </button>
         </Link>
       </div>

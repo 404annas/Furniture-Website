@@ -2,6 +2,7 @@ import React from "react";
 import { Gallery, Item } from "react-photoswipe-gallery";
 import "photoswipe/style.css";
 import { Link } from "react-router-dom";
+import { HiArrowLeft, HiArrowRight } from "react-icons/hi";
 
 const images = [
   {
@@ -26,16 +27,36 @@ const Portfolio17 = () => {
 
       <div className="flex flex-col gap-6 text-base sm:text-lg text-black text-center max-w-4xl mx-auto px-4 sm:px-6">
         <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae, esse voluptatum. Nesciunt dolorum unde, earum vel, architecto iste aperiam autem quia molestiae tempora recusandae, doloribus magnam ex expedita ullam quis. Ipsa aliquam saepe nulla maxime magni dolor in voluptas illo vitae explicabo fuga dignissimos cumque, rerum rem error quae repellat.
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae,
+          esse voluptatum. Nesciunt dolorum unde, earum vel, architecto iste
+          aperiam autem quia molestiae tempora recusandae, doloribus magnam ex
+          expedita ullam quis. Ipsa aliquam saepe nulla maxime magni dolor in
+          voluptas illo vitae explicabo fuga dignissimos cumque, rerum rem error
+          quae repellat.
         </p>
         <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae, esse voluptatum. Nesciunt dolorum unde, earum vel, architecto iste aperiam autem quia molestiae tempora recusandae, doloribus magnam ex expedita ullam quis. Ipsa aliquam saepe nulla maxime magni dolor in voluptas illo vitae explicabo fuga dignissimos cumque, rerum rem error quae repellat.
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae,
+          esse voluptatum. Nesciunt dolorum unde, earum vel, architecto iste
+          aperiam autem quia molestiae tempora recusandae, doloribus magnam ex
+          expedita ullam quis. Ipsa aliquam saepe nulla maxime magni dolor in
+          voluptas illo vitae explicabo fuga dignissimos cumque, rerum rem error
+          quae repellat.
         </p>
         <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae, esse voluptatum. Nesciunt dolorum unde, earum vel, architecto iste aperiam autem quia molestiae tempora recusandae, doloribus magnam ex expedita ullam quis. Ipsa aliquam saepe nulla maxime magni dolor in voluptas illo vitae explicabo fuga dignissimos cumque, rerum rem error quae repellat.
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae,
+          esse voluptatum. Nesciunt dolorum unde, earum vel, architecto iste
+          aperiam autem quia molestiae tempora recusandae, doloribus magnam ex
+          expedita ullam quis. Ipsa aliquam saepe nulla maxime magni dolor in
+          voluptas illo vitae explicabo fuga dignissimos cumque, rerum rem error
+          quae repellat.
         </p>
         <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae, esse voluptatum. Nesciunt dolorum unde, earum vel, architecto iste aperiam autem quia molestiae tempora recusandae, doloribus magnam ex expedita ullam quis. Ipsa aliquam saepe nulla maxime magni dolor in voluptas illo vitae explicabo fuga dignissimos cumque, rerum rem error quae repellat.
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae,
+          esse voluptatum. Nesciunt dolorum unde, earum vel, architecto iste
+          aperiam autem quia molestiae tempora recusandae, doloribus magnam ex
+          expedita ullam quis. Ipsa aliquam saepe nulla maxime magni dolor in
+          voluptas illo vitae explicabo fuga dignissimos cumque, rerum rem error
+          quae repellat.
         </p>
       </div>
 
@@ -66,11 +87,24 @@ const Portfolio17 = () => {
         </Gallery>
       </div>
 
-      <Link to="/portfolio" className="flex items-center justify-center mb-10">
-        <button className="bg-[#b37558] hover:bg-[#a0654d] rounded-md text-white font-semibold text-sm sm:text-base px-6 py-2 sm:px-8 sm:py-3 transition-all duration-300">
-          Go Back
-        </button>
-      </Link>
+      <div className="flex sm:flex-row items-center justify-between gap-4 mb-10 mt-6 md:px-40 w-full">
+        <Link to={"/p18-bespoke-wardrobe"} className="w-full sm:w-auto">
+          <button className="w-full sm:w-auto flex items-center justify-center gap-2 bg-[#b37558] hover:bg-[#a0654d] rounded-md text-white font-semibold px-6 py-2">
+            <HiArrowLeft />
+            Previous
+          </button>
+        </Link>
+
+        <Link
+          to="/p2-biophilic-oasis-conservatory"
+          className="w-full sm:w-auto"
+        >
+          <button className="w-full sm:w-auto flex items-center justify-center gap-2 bg-[#b37558] hover:bg-[#a0654d] rounded-md text-white font-semibold px-6 py-2">
+            Next
+            <HiArrowRight />
+          </button>
+        </Link>
+      </div>
     </section>
   );
 };

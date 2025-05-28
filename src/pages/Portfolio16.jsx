@@ -2,7 +2,7 @@ import React from "react";
 import { Gallery, Item } from "react-photoswipe-gallery";
 import "photoswipe/style.css";
 import { Link } from "react-router-dom";
-
+import { HiArrowLeft, HiArrowRight } from "react-icons/hi";
 
 import Before1 from "../assets/Before1.jpg";
 import Before2 from "../assets/Before2.jpg";
@@ -161,66 +161,80 @@ const Portfolio16 = () => {
       </div>
 
       <div className="px-4 sm:px-8 md:px-20 py-10">
-        <h1 className="rbs text-center mb-4 text-[#b37558] text-xl sm:text-2xl font-semibold bg-[#F7E7CE] py-2 px-4 rounded w-fit mx-auto">BEFORE</h1>
-              <Gallery>
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-                  {beforeImages.map((img, index) => (
-                    <Item
-                      key={index}
-                      original={img.src}
-                      thumbnail={img.src}
-                      width={img.width}
-                      height={img.height}
-                      caption={img.caption}
-                    >
-                      {({ ref, open }) => (
-                        <img
-                          ref={ref}
-                          onClick={open}
-                          src={img.src}
-                          alt={img.caption || `Image ${index + 1}`}
-                          className="w-full h-60 sm:h-64 object-cover rounded-md cursor-pointer shadow hover:scale-105 transition-transform duration-200"
-                        />
-                      )}
-                    </Item>
-                  ))}
-                </div>
-              </Gallery>
-            </div>
+        <h1 className="rbs text-center mb-4 text-[#b37558] text-xl sm:text-2xl font-semibold bg-[#F7E7CE] py-2 px-4 rounded w-fit mx-auto">
+          BEFORE
+        </h1>
+        <Gallery>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+            {beforeImages.map((img, index) => (
+              <Item
+                key={index}
+                original={img.src}
+                thumbnail={img.src}
+                width={img.width}
+                height={img.height}
+                caption={img.caption}
+              >
+                {({ ref, open }) => (
+                  <img
+                    ref={ref}
+                    onClick={open}
+                    src={img.src}
+                    alt={img.caption || `Image ${index + 1}`}
+                    className="w-full h-60 sm:h-64 object-cover rounded-md cursor-pointer shadow hover:scale-105 transition-transform duration-200"
+                  />
+                )}
+              </Item>
+            ))}
+          </div>
+        </Gallery>
+      </div>
 
       <div className="px-4 sm:px-8 md:px-20 py-10">
-        <h1 className="rbs text-center mb-4 text-[#b37558] text-xl sm:text-2xl font-semibold bg-[#F7E7CE] py-2 px-4 rounded w-fit mx-auto">AFTER</h1>
-              <Gallery>
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-                  {afterImages.map((img, index) => (
-                    <Item
-                      key={index}
-                      original={img.src}
-                      thumbnail={img.src}
-                      width={img.width}
-                      height={img.height}
-                      caption={img.caption}
-                    >
-                      {({ ref, open }) => (
-                        <img
-                          ref={ref}
-                          onClick={open}
-                          src={img.src}
-                          alt={img.caption || `Image ${index + 1}`}
-                          className="w-full h-60 sm:h-64 object-cover rounded-md cursor-pointer shadow hover:scale-105 transition-transform duration-200"
-                        />
-                      )}
-                    </Item>
-                  ))}
-                </div>
-              </Gallery>
-            </div>
+        <h1 className="rbs text-center mb-4 text-[#b37558] text-xl sm:text-2xl font-semibold bg-[#F7E7CE] py-2 px-4 rounded w-fit mx-auto">
+          AFTER
+        </h1>
+        <Gallery>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+            {afterImages.map((img, index) => (
+              <Item
+                key={index}
+                original={img.src}
+                thumbnail={img.src}
+                width={img.width}
+                height={img.height}
+                caption={img.caption}
+              >
+                {({ ref, open }) => (
+                  <img
+                    ref={ref}
+                    onClick={open}
+                    src={img.src}
+                    alt={img.caption || `Image ${index + 1}`}
+                    className="w-full h-60 sm:h-64 object-cover rounded-md cursor-pointer shadow hover:scale-105 transition-transform duration-200"
+                  />
+                )}
+              </Item>
+            ))}
+          </div>
+        </Gallery>
+      </div>
 
-      <Link to="/portfolio" className="flex items-center justify-center mb-10">
-        <button className="bg-[#b37558] hover:bg-[#a0654d] rounded-md text-white font-semibold text-sm sm:text-base px-6 py-2 sm:px-8 sm:py-3 transition-all duration-300">
-          Go Back
-        </button>
-      </Link>
+      <div className="flex sm:flex-row items-center justify-between gap-4 mb-10 mt-6 md:px-40 w-full">
+        <Link to={"/p5-bespoke-joinery-projects"} className="w-full sm:w-auto">
+          <button className="w-full sm:w-auto flex items-center justify-center gap-2 bg-[#b37558] hover:bg-[#a0654d] rounded-md text-white font-semibold px-6 py-2">
+            <HiArrowLeft />
+            Previous
+          </button>
+        </Link>
+
+        <Link to="/p6-modern-kitchens" className="w-full sm:w-auto">
+          <button className="w-full sm:w-auto flex items-center justify-center gap-2 bg-[#b37558] hover:bg-[#a0654d] rounded-md text-white font-semibold px-6 py-2">
+            Next
+            <HiArrowRight />
+          </button>
+        </Link>
+      </div>
     </section>
   );
 };

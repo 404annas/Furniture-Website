@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { HiArrowLeft, HiArrowRight } from "react-icons/hi";
 
 const Portfolio10 = () => {
   return (
@@ -52,10 +53,18 @@ const Portfolio10 = () => {
         />
       </div>
 
-      <div className="flex justify-center">
-        <Link to="/portfolio">
-          <button className="bg-[#b37558] hover:bg-[#a0654d] text-white font-semibold text-sm sm:text-base px-6 py-2 rounded-md transition-colors duration-200">
-            Go Back
+      <div className="flex sm:flex-row items-center justify-between gap-4 mb-10 mt-6 md:px-40 w-full">
+        <Link to={"/p9-chessingtion-kingston"} className="w-full sm:w-auto">
+          <button className="w-full sm:w-auto flex items-center justify-center gap-2 bg-[#b37558] hover:bg-[#a0654d] rounded-md text-white font-semibold px-6 py-2">
+            <HiArrowLeft />
+            Previous
+          </button>
+        </Link>
+
+        <Link to="/p11-seven-bed" className="w-full sm:w-auto">
+          <button className="w-full sm:w-auto flex items-center justify-center gap-2 bg-[#b37558] hover:bg-[#a0654d] rounded-md text-white font-semibold px-6 py-2">
+            Next
+            <HiArrowRight />
           </button>
         </Link>
       </div>
