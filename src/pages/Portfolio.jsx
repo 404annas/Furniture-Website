@@ -11,8 +11,9 @@ import Wine from "../assets/Wine.webp";
 import SevenBed from "../assets/SevenBedMain.webp";
 import Biblophic from "../assets/Biblophic.webp";
 import HallwayMain from "../assets/HallwayMain.jpg"
-import Bespoke1 from "../assets/Bespoke1.webp"
-import Wardrobe4 from "../assets/Wardrobe4.webp"
+import Bespoke1 from "../assets/Bespoke1.webp";
+import Wardrobe4 from "../assets/Wardrobe4.webp";
+import SevenBed2 from "../assets/SevenBed2.webp";
 
 const allItems = [
   {
@@ -66,7 +67,7 @@ const allItems = [
   //   route: "/p12-conservatory-croydon",
   // },
   {
-    src: "https://designz.dwell-rich.com/wp-content/uploads/2024/12/WhatsApp-Image-2024-12-12-at-12.29.11-PM.jpeg-1536x1152.jpg",
+    src: SevenBed2,
     title: "Surbiton Project Living and Hallway",
     route: "/p13-surbiton-project",
   },
