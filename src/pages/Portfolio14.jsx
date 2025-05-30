@@ -4,93 +4,110 @@ import "photoswipe/style.css";
 import { Link } from "react-router-dom";
 import { HiArrowLeft, HiArrowRight } from "react-icons/hi";
 
+import AirMain from "../assets/AirMain.webp";
+import Air1 from "../assets/Air1.webp";
+import Air2 from "../assets/Air2.webp";
+import Air3 from "../assets/Air3.webp";
+import Air4 from "../assets/Air4.webp";
+import Air5 from "../assets/Air5.webp";
+import Air6 from "../assets/Air6.webp";
+import Air7 from "../assets/Air7.webp";
+import Air8 from "../assets/Air8.webp";
+import Air9 from "../assets/Air1.webp";
+import Air10 from "../assets/Air10.webp";
+import Air11 from "../assets/Air11.webp";
+import Air12 from "../assets/Air12.webp";
+import Air13 from "../assets/Air13.webp";
+import Air14 from "../assets/Air14.webp";
+import Air15 from "../assets/Air15.webp";
+
 const images = [
   {
-    src: "https://designz.dwell-rich.com/wp-content/uploads/2024/12/PHOTO-2024-11-05-23-42-33_4-Copy-650x650.jpg",
+    src: Air1,
     width: 1600,
     height: 1200,
     caption: "Modern ",
   },
   {
-    src: "https://designz.dwell-rich.com/wp-content/uploads/2024/12/PHOTO-2024-11-05-23-42-34-650x650.jpg",
+    src: Air2,
     width: 1600,
     height: 1200,
     caption: "Stylish ",
   },
   {
-    src: "https://designz.dwell-rich.com/wp-content/uploads/2024/12/PHOTO-2024-11-05-23-42-34_1-650x650.jpg",
+    src: Air3,
     width: 1600,
     height: 1200,
     caption: "Stylish ",
   },
   {
-    src: "https://designz.dwell-rich.com/wp-content/uploads/2024/12/PHOTO-2024-11-05-23-42-34_2-650x650.jpg",
+    src: Air4,
     width: 1600,
     height: 1200,
     caption: "Stylish ",
   },
   {
-    src: "https://designz.dwell-rich.com/wp-content/uploads/2024/12/PHOTO-2024-11-05-23-42-35-650x650.jpg",
+    src: Air5,
     width: 1600,
     height: 1200,
     caption: "Stylish ",
   },
   {
-    src: "https://designz.dwell-rich.com/wp-content/uploads/2024/12/PHOTO-2024-11-05-23-42-35_1-650x650.jpg",
+    src: Air6,
     width: 1600,
     height: 1200,
     caption: "Stylish ",
   },
   {
-    src: "https://designz.dwell-rich.com/wp-content/uploads/2024/12/PHOTO-2024-11-05-23-42-35_2-Copy-650x650.jpg",
+    src: Air7,
     width: 1600,
     height: 1200,
     caption: "Stylish ",
   },
   {
-    src: "https://designz.dwell-rich.com/wp-content/uploads/2024/12/PHOTO-2024-11-05-23-42-36-650x650.jpg",
+    src: Air8,
     width: 1600,
     height: 1200,
     caption: "Stylish ",
   },
   {
-    src: "https://designz.dwell-rich.com/wp-content/uploads/2024/12/PHOTO-2024-11-05-23-42-35_2-Copy-650x650.jpg",
+    src: Air9,
     width: 1600,
     height: 1200,
     caption: "Stylish ",
   },
   {
-    src: "https://designz.dwell-rich.com/wp-content/uploads/2024/12/PHOTO-2024-11-05-23-42-36_1-650x650.jpg",
+    src: Air10,
     width: 1600,
     height: 1200,
     caption: "Stylish ",
   },
   {
-    src: "https://designz.dwell-rich.com/wp-content/uploads/2024/12/PHOTO-2024-11-05-23-42-36_2-Copy-650x650.jpg",
+    src: Air11,
     width: 1600,
     height: 1200,
     caption: "Stylish ",
   },
   {
-    src: "https://designz.dwell-rich.com/wp-content/uploads/2024/12/PHOTO-2024-11-05-23-42-36_3-Copy-650x650.jpg",
+    src: Air12,
     width: 1600,
     height: 1200,
     caption: "Stylish ",
   },
   {
-    src: "https://designz.dwell-rich.com/wp-content/uploads/2024/12/PHOTO-2024-11-05-23-42-36_4-650x650.jpg",
+    src: Air13,
     width: 1600,
     height: 1200,
     caption: "Stylish ",
   },
   {
-    src: "https://designz.dwell-rich.com/wp-content/uploads/2024/12/PHOTO-2024-11-05-23-42-33_2-Copy-650x650.jpg",
+    src: Air14,
     width: 1600,
     height: 1200,
     caption: "Stylish ",
   },
   {
-    src: "https://designz.dwell-rich.com/wp-content/uploads/2024/12/PHOTO-2024-11-05-23-42-33_3-650x650.jpg",
+    src: Air15,
     width: 1600,
     height: 1200,
     caption: "Stylish ",

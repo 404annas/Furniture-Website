@@ -118,20 +118,23 @@ const Portfolio7 = () => {
       </div>
 
       <div className="flex sm:flex-row items-center justify-between gap-4 mb-10 mt-6 md:px-40 w-full">
-              <Link to={"/p4-gilded-elegance-passage"} className="w-full sm:w-auto">
-                <button className="w-full sm:w-auto flex items-center justify-center gap-2 bg-[#b37558] hover:bg-[#a0654d] rounded-md text-white font-semibold px-6 py-2">
-                  <HiArrowLeft />
-                  Previous
-                </button>
-              </Link>
-      
-              <Link className="w-full sm:w-auto">
-                <button disabled className="w-full sm:w-auto flex items-center justify-center gap-2 bg-[#b37558] hover:bg-[#a0654d] rounded-md text-white font-semibold px-6 py-2 cursor-not-allowed">
-                  Next
-                  <HiArrowRight />
-                </button>
-              </Link>
-            </div>
+        <Link to={"/p4-gilded-elegance-passage"} className="w-full sm:w-auto">
+          <button className="w-full sm:w-auto flex items-center justify-center gap-2 bg-[#b37558] hover:bg-[#a0654d] rounded-md text-white font-semibold px-6 py-2">
+            <HiArrowLeft />
+            Previous
+          </button>
+        </Link>
+
+        <Link className="w-full sm:w-auto">
+          <button
+            disabled
+            className="w-full sm:w-auto flex items-center justify-center gap-2 bg-[#b37558] hover:bg-[#a0654d] rounded-md text-white font-semibold px-6 py-2 cursor-not-allowed"
+          >
+            Next
+            <HiArrowRight />
+          </button>
+        </Link>
+      </div>
     </section>
   );
 };

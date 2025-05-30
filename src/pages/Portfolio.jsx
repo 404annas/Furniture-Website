@@ -1,14 +1,27 @@
-import React, { useState } from "react";
 import { Link } from "react-router-dom";
+
+import KitchenMain from "../assets/KitchenMain.webp"
+import Kingston7 from "../assets/Kingston7.webp";
+import TKitchenMain from "../assets/TKitchenMain.webp";
+import TwinkinMain from "../assets/TwinkinMain.webp"
+import ReceptionCentralLondon from "../assets/ReceptionCentralLondon.webp"
+import AirMain from "../assets/AirMain.webp";
+import WardrobeMain from "../assets/WardrobeMain.webp";
+import Wine from "../assets/Wine.webp";
+import SevenBed from "../assets/SevenBedMain.webp";
+import Biblophic from "../assets/Biblophic.webp";
+import HallwayMain from "../assets/HallwayMain.jpg"
+import Bespoke1 from "../assets/Bespoke1.webp"
+import Wardrobe4 from "../assets/Wardrobe4.webp"
 
 const allItems = [
   {
-    src: "https://designz.dwell-rich.com/wp-content/uploads/2023/08/DSC00311-scaled-1-1536x1025.jpg",
+    src: Kingston7,
     title: "Kingston Upon Thames",
     route: "/p1-kingston-upon-thames",
   },
   {
-    src: "https://designz.dwell-rich.com/wp-content/uploads/2023/12/WhatsApp-Image-2023-12-04-at-4.14.20-AM-e1701710633307-1.jpeg",
+    src: Bespoke1,
     title: "Bespoke joinery Projects",
     route: "/p5-bespoke-joinery-projects",
   },
@@ -18,32 +31,32 @@ const allItems = [
     route: "/p16-sutton-style",
   },
   {
-    src: "https://st.hzcdn.com/fimgs/e47117ff06ab9def_9638-w312-h312-b0-p0---kitchen.jpg",
+    src: KitchenMain,
     title: "Kitchens In Surrey - Modern",
     route: "/p6-modern-kitchens",
   },
   {
-    src: "https://st.hzcdn.com/fimgs/37f1dbc106b37dad_8035-w312-h312-b0-p0---kitchen.jpg",
+    src: TKitchenMain,
     title: "High-end Traditional Kitchens",
     route: "/p15-traditional-kitchens",
   },
   {
-    src: "https://designz.dwell-rich.com/wp-content/uploads/2024/12/Screenshot-2025-01-10-195411.png",
+    src: TwinkinMain,
     title: "Twickenham",
     route: "/p8-twickenham",
   },
   {
-    src: "https://designz.dwell-rich.com/wp-content/uploads/2024/12/WhatsApp-Image-2024-12-12-at-12.27.41-PM-1.jpeg-1536x1152.jpg",
+    src: Wardrobe4,
     title: "Chessingtion Kingston",
     route: "/p9-chessingtion-kingston",
   },
   {
-    src: "https://designz.dwell-rich.com/wp-content/uploads/2024/12/home-design.jpg",
+    src: ReceptionCentralLondon,
     title: "Reception Central London , Chelsea",
     route: "/p10-reception-central",
   },
   {
-    src: "https://designz.dwell-rich.com/wp-content/uploads/2024/12/a9f143eb06c90d47_0099-w378-h378-b0-p0-contemporary-living-room.webp",
+    src: SevenBed,
     title: "Seven bed high-end project, Sutton",
     route: "/p11-seven-bed",
   },
@@ -58,40 +71,40 @@ const allItems = [
     route: "/p13-surbiton-project",
   },
   {
-    src: "https://designz.dwell-rich.com/wp-content/uploads/2024/12/PHOTO-2024-11-05-23-42-33_3-1536x1024.jpg",
+    src: AirMain,
     title: "Air B&B Mitcham",
     route: "/p14-air-mitcham",
   },
   {
-    src: "https://st.hzcdn.com/fimgs/6e91e40406b38c58_2905-w312-h312-b0-p0---wardrobe.jpg",
+    src: WardrobeMain,
     title: "Bespoke Wardrobe study in Wimbledon",
     route: "/p18-bespoke-wardrobe",
   },
   {
-    src: "https://st.hzcdn.com/fimgs/eef1ac5a06ab9e45_3260-w312-h312-b0-p0---wine-cellar.jpg",
+    src: Wine,
     title: "Wine cellar in Leatherhead",
     route: "/p17-wine-cellar",
   },
   {
-    src: "https://designz.dwell-rich.com/wp-content/uploads/2023/11/imageedit_16_6242385301.jpg",
+    src: Biblophic,
     title: "Biophilic Oasis Conservatory",
     route: "/p2-biophilic-oasis-conservatory",
   },
+  // {
+  //   src: "https://designz.dwell-rich.com/wp-content/uploads/2023/11/Screenshot-2023-11-29-160007.png",
+  //   title: "Collaborative Hub",
+  //   route: "/p3-collaborative-hub",
+  // },
   {
-    src: "https://designz.dwell-rich.com/wp-content/uploads/2023/11/Screenshot-2023-11-29-160007.png",
-    title: "Collaborative Hub",
-    route: "/p3-collaborative-hub",
-  },
-  {
-    src: "https://designz.dwell-rich.com/wp-content/uploads/2023/11/Hallway-1536x863.jpg",
+    src: HallwayMain,
     title: "Gilded Elegance Passage",
     route: "/p4-gilded-elegance-passage",
   },
-  {
-    src: "https://designz.dwell-rich.com/wp-content/uploads/2024/12/WhatsApp-Image-2024-12-12-at-12.29.11-PM-2.jpeg-1.jpg",
-    title: "Garden design-Kingston",
-    route: "/p7-garden-design-kingston",
-  },
+  // {
+  //   src: "https://designz.dwell-rich.com/wp-content/uploads/2024/12/WhatsApp-Image-2024-12-12-at-12.29.11-PM-2.jpeg-1.jpg",
+  //   title: "Garden design-Kingston",
+  //   route: "/p7-garden-design-kingston",
+  // },
 ];
 
 const Portfolio = () => {

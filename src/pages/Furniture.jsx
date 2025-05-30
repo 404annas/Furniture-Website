@@ -29,7 +29,7 @@ const Furniture = () => {
         {/* Image */}
         <img
           className="w-full max-w-md lg:max-w-lg rounded-lg shadow-[0_10px_25px_rgba(0,0,0,0.5)]"
-          src="https://designz.dwell-rich.com/wp-content/uploads/2023/08/furniture-1-768x512.jpg"
+          src="https://img.freepik.com/premium-photo/contemporary-living-room-with-dining-table-set-colorful-chairs-stylish-lighting-fixtures_146105-22072.jpg?ga=GA1.1.1673158750.1693654360&semt=ais_hybrid&w=1300"
           alt="Furniture Image"
         />
       </div>

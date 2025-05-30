@@ -4,15 +4,18 @@ import "photoswipe/style.css";
 import { Link } from "react-router-dom";
 import { HiArrowLeft, HiArrowRight } from "react-icons/hi";
 
+import Wardrobe6 from "../assets/Wardrobe6.webp";
+import Wardrobe5 from "../assets/Wardrobe5.webp";
+
 const images = [
   {
-    src: "https://designz.dwell-rich.com/wp-content/uploads/2024/12/WhatsApp-Image-2024-12-12-at-12.27.41-PM-1.jpeg-2.jpg",
+    src: Wardrobe5,
     width: 1600,
     height: 1200,
     caption: "Modern",
   },
   {
-    src: "https://designz.dwell-rich.com/wp-content/uploads/2024/12/WhatsApp-Image-2024-12-12-at-12.27.41-PM.jpeg-1.jpg",
+    src: Wardrobe6,
     width: 1600,
     height: 1200,
     caption: "Stylish",
@@ -102,7 +105,7 @@ const Portfolio9 = () => {
                     onClick={open}
                     src={img.src}
                     alt={img.caption || `Image ${index + 1}`}
-                    className="w-full h-56 sm:h-64 md:h-72 object-cover rounded-md cursor-pointer shadow hover:scale-105 transition-transform duration-200"
+                    className="w-full h-56 sm:h-64 md:h-80 object-cover rounded-md cursor-pointer shadow hover:scale-105 transition-transform duration-200"
                   />
                 )}
               </Item>
@@ -111,7 +114,7 @@ const Portfolio9 = () => {
         </Gallery>
       </div>
 
-      <div className="w-full px-4 sm:px-6 md:px-10">
+      {/* <div className="w-full px-4 sm:px-6 md:px-10">
         <video
           controls
           className="w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] rounded-lg object-cover mb-12"
@@ -121,7 +124,7 @@ const Portfolio9 = () => {
             type="video/mp4"
           />
         </video>
-      </div>
+      </div> */}
 
       <div className="flex sm:flex-row items-center justify-between gap-4 mb-10 mt-6 md:px-40 w-full">
         <Link to={"/p8-twickenham"} className="w-full sm:w-auto">

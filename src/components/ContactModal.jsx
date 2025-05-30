@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import { IoMdClose } from "react-icons/io";
 
+import DesignzLogo from "../assets/DesignzLogo.png";
+
 const ContactModal = () => {
   const {
     register,
@@ -60,11 +62,7 @@ const ContactModal = () => {
     <div className="fixed inset-0 bg-black bg-opacity-70 z-50 flex items-center justify-center p-4 lg:pt-28 md:pt-32 sm:pt-32 pt-32">
       <div className="bg-[#F7E7CE] w-full max-w-4xl sm:max-h-[80vh] max-h-[75vh] overflow-y-auto rounded-2xl shadow-xl p-4 sm:p-8">
         <div className="flex items-center justify-between sm:mb-4 mb-4">
-          <img
-            className="w-10 h-8"
-            src="https://designz.dwell-rich.com/wp-content/uploads/2023/06/DR_set-removebg-preview-e1701030039725.png"
-            alt="Logo"
-          />
+          <img className="w-10 h-8" src={DesignzLogo} alt="Logo" />
           <button
             onClick={handleClose}
             className="sm:text-2xl text-lg text-gray-600 hover:text-black transition"

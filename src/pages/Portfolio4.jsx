@@ -4,24 +4,30 @@ import "photoswipe/style.css";
 import { Link } from "react-router-dom";
 import { HiArrowLeft, HiArrowRight } from "react-icons/hi";
 
+import HallwayMain from "../assets/HallwayMain.jpg"
+import Hallway1 from "../assets/Hallway1.webp"
+import Hallway2 from "../assets/Hallway2.webp"
+import Hallway3 from "../assets/Hallway3.webp"
+import Hallway4 from "../assets/Hallway4.webp"
+
 const images = [
   {
-    src: "https://designz.dwell-rich.com/wp-content/uploads/2023/11/Hallway4.jpg",
+    src: Hallway4,
     width: 1600,
     height: 900,
   },
   {
-    src: "https://designz.dwell-rich.com/wp-content/uploads/2023/11/Hallway2.jpg",
+    src: Hallway1,
     width: 1600,
     height: 900,
   },
   {
-    src: "https://designz.dwell-rich.com/wp-content/uploads/2023/11/Hallway.jpg",
+    src: Hallway2,
     width: 1600,
     height: 900,
   },
   {
-    src: "https://designz.dwell-rich.com/wp-content/uploads/2023/11/Hallway3.jpg",
+    src: Hallway3,
     width: 1600,
     height: 900,
   },

@@ -4,57 +4,67 @@ import "photoswipe/style.css";
 import { Link } from "react-router-dom";
 import { HiArrowLeft, HiArrowRight } from "react-icons/hi";
 
+import Wardrobe2 from "../assets/Wardrobe2.webp";
+import Wardrobe8 from "../assets/Wardrobe8.webp";
+import Bespoke2 from "../assets/Bespoke2.webp";
+import Wardrobe5 from "../assets/Wardrobe5.webp";
+import Wardrobe9 from "../assets/Wardrobe9.webp";
+import Wardrobe7 from "../assets/Wardrobe7.webp";
+import Wardrobe6 from "../assets/Wardrobe6.webp";
+import Bespoke1 from "../assets/Bespoke1.webp";
+import Wardrobe1 from "../assets/Wardrobe1.webp";
+
 const images = [
   {
-    src: "https://designz.dwell-rich.com/wp-content/uploads/2023/12/WhatsApp-Image-2023-12-04-at-4.14.22-AM-2.jpeg",
+    src: Wardrobe2,
     width: 1600,
     height: 1200,
     caption: "Modern ",
   },
   {
-    src: "https://designz.dwell-rich.com/wp-content/uploads/2023/12/WhatsApp-Image-2023-12-04-at-4.14.22-AM-1.jpeg",
+    src: Wardrobe8,
     width: 1600,
     height: 1200,
     caption: "Stylish ",
   },
   {
-    src: "https://designz.dwell-rich.com/wp-content/uploads/2023/12/WhatsApp-Image-2023-12-04-at-4.14.22-AM.jpeg",
+    src: Bespoke2,
     width: 1600,
     height: 1200,
     caption: "Luxury ",
   },
   {
-    src: "https://designz.dwell-rich.com/wp-content/uploads/2023/12/WhatsApp-Image-2023-12-04-at-4.14.21-AM-2.jpeg",
+    src: Wardrobe5,
     width: 1600,
     height: 1200,
     caption: "Luxury ",
   },
   {
-    src: "https://designz.dwell-rich.com/wp-content/uploads/2023/12/WhatsApp-Image-2023-12-04-at-4.14.21-AM-1.jpeg",
+    src: Wardrobe9,
     width: 1600,
     height: 1200,
     caption: "Luxury ",
   },
   {
-    src: "https://designz.dwell-rich.com/wp-content/uploads/2023/12/WhatsApp-Image-2023-12-04-at-4.14.21-AM.jpeg",
+    src: Wardrobe7,
     width: 1600,
     height: 1200,
     caption: "Luxury ",
   },
   {
-    src: "https://designz.dwell-rich.com/wp-content/uploads/2023/12/WhatsApp-Image-2023-12-04-at-4.14.20-AM-2.jpeg",
+    src: Wardrobe6,
     width: 1600,
     height: 1200,
     caption: "Luxury ",
   },
   {
-    src: "https://designz.dwell-rich.com/wp-content/uploads/2023/12/WhatsApp-Image-2023-12-04-at-4.14.20-AM-1.jpeg",
+    src: Bespoke1,
     width: 1600,
     height: 1200,
     caption: "Luxury ",
   },
   {
-    src: "https://designz.dwell-rich.com/wp-content/uploads/2023/12/WhatsApp-Image-2023-12-04-at-4.14.20-AM-e1701710633307.jpeg",
+    src: Wardrobe1,
     width: 1600,
     height: 1200,
     caption: "Luxury ",
@@ -107,9 +117,7 @@ const Portfolio5 = () => {
 
       <div className="flex sm:flex-row items-center justify-between gap-4 mb-10 mt-6 md:px-40 w-full">
         <Link to={"/p1-kingston-upon-thames"} className="w-full sm:w-auto">
-          <button
-            className="w-full sm:w-auto flex items-center justify-center gap-2 bg-[#b37558] hover:bg-[#a0654d] rounded-md text-white font-semibold px-6 py-2"
-          >
+          <button className="w-full sm:w-auto flex items-center justify-center gap-2 bg-[#b37558] hover:bg-[#a0654d] rounded-md text-white font-semibold px-6 py-2">
             <HiArrowLeft />
             Previous
           </button>

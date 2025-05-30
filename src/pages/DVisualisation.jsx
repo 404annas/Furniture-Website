@@ -1,5 +1,3 @@
-import React from "react";
-
 const DVisualisation = () => {
   return (
     <section className="px-4 sm:px-6 lg:px-12">
@@ -28,10 +26,10 @@ const DVisualisation = () => {
         <div className="flex w-max animate-scroll gap-4">
           {[...Array(2)].flatMap(() =>
             [
-              "https://designz.dwell-rich.com/wp-content/uploads/2023/09/WhatsApp-Image-2023-09-17-at-9.42.48-AM.jpeg",
-              "https://designz.dwell-rich.com/wp-content/uploads/2023/09/WhatsApp-Image-2023-09-17-at-9.43.01-AM.jpeg",
-              "https://designz.dwell-rich.com/wp-content/uploads/2023/09/WhatsApp-Image-2023-09-17-at-9.42.18-AM.jpeg",
-              "https://designz.dwell-rich.com/wp-content/uploads/2023/09/WhatsApp-Image-2023-09-17-at-9.42.26-AM.jpeg",
+              "https://img.freepik.com/premium-photo/modern-luxury-bedroom_614034-48056.jpg?ga=GA1.1.1673158750.1693654360&semt=ais_hybrid&w=1300",
+              "https://img.freepik.com/free-photo/room-interior-hotel-bedroom_23-2150683419.jpg?ga=GA1.1.1673158750.1693654360&semt=ais_hybrid&w=1100",
+              "https://img.freepik.com/free-photo/interior-design-neoclassical-style-with-furnishings-decor_23-2151199315.jpg?ga=GA1.1.1673158750.1693654360&semt=ais_hybrid&w=1300",
+              "https://img.freepik.com/free-photo/3d-rendering-beautiful-luxury-bedroom-suite-hotel-with-tv_105762-2301.jpg?ga=GA1.1.1673158750.1693654360&semt=ais_hybrid&w=1100",
             ].map((src, idx) => (
               <img
                 key={idx + Math.random()}

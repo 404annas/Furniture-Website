@@ -4,39 +4,46 @@ import "photoswipe/style.css";
 import { Link } from "react-router-dom";
 import { HiArrowLeft, HiArrowRight } from "react-icons/hi";
 
+import KitchenMain from "../assets/KitchenMain.webp";
+import Kitchen1 from "../assets/Kitchen1.webp";
+import Kitchen2 from "../assets/Kitchen2.webp";
+import Kitchen3 from "../assets/Kitchen3.webp";
+import Kitchen4 from "../assets/Kitchen4.webp";
+import Kitchen5 from "../assets/Kitchen5.webp";
+
 const images = [
   {
-    src: "https://st.hzcdn.com/fimgs/e47117ff06ab9def_9638-w312-h312-b0-p0---kitchen.jpg",
+    src: KitchenMain,
     width: 1600,
     height: 1200,
     caption: "Modern ",
   },
   {
-    src: "https://designz.dwell-rich.com/wp-content/uploads/2024/12/WhatsApp-Image-2024-12-12-at-12.28.42-PM-2.jpeg.jpg",
+    src: Kitchen1,
     width: 1600,
     height: 1200,
     caption: "Luxury ",
   },
   {
-    src: "https://designz.dwell-rich.com/wp-content/uploads/2024/12/WhatsApp-Image-2024-12-12-at-12.28.42-PM-4.jpeg.jpg",
+    src: Kitchen2,
     width: 1600,
     height: 1200,
     caption: "Luxury ",
   },
   {
-    src: "https://designz.dwell-rich.com/wp-content/uploads/2024/12/WhatsApp-Image-2024-12-12-at-12.28.43-PM-1.jpeg.jpg",
+    src: Kitchen3,
     width: 1600,
     height: 1200,
     caption: "Luxury ",
   },
   {
-    src: "https://designz.dwell-rich.com/wp-content/uploads/2024/12/WhatsApp-Image-2024-12-12-at-12.28.43-PM-4.jpeg.jpg",
+    src: Kitchen4,
     width: 1600,
     height: 1200,
     caption: "Luxury ",
   },
   {
-    src: "https://designz.dwell-rich.com/wp-content/uploads/2024/12/WhatsApp-Image-2024-12-12-at-12.28.42-PM.jpeg.jpg",
+    src: Kitchen5,
     width: 1600,
     height: 1200,
     caption: "Luxury ",

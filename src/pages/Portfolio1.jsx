@@ -4,75 +4,87 @@ import "photoswipe/style.css";
 import { Link } from "react-router-dom";
 import { HiArrowLeft, HiArrowRight } from "react-icons/hi";
 
+import KingstonBg from "../assets/KingstonBg.jpg";
+import Kingston1 from "../assets/Kingston1.webp";
+import Kingston2 from "../assets/Kingston2.webp";
+import Kingston3 from "../assets/Kingston3.webp";
+import Kingston4 from "../assets/Kingston4.webp";
+import Kingston5 from "../assets/Kingston5.webp";
+import Kingston6 from "../assets/Kingston6.webp";
+import Kingston7 from "../assets/Kingston7.webp";
+import Kingston8 from "../assets/Kingston8.webp";
+import Kingston9 from "../assets/Kingston9.webp";
+import Kingston10 from "../assets/Kingston10.webp";
+
 const images = [
   {
-    src: "https://designz.dwell-rich.com/wp-content/uploads/2023/08/WhatsApp-Image-2023-08-22-at-4.06.43-PM-1.jpeg",
+    src: Kingston1,
     width: 1600,
     height: 1200,
     caption: "Modern Kitchen",
   },
   {
-    src: "https://designz.dwell-rich.com/wp-content/uploads/2023/08/WhatsApp-Image-2023-08-22-at-4.06.43-PM-2.jpeg",
+    src: Kingston2,
     width: 1600,
     height: 1200,
     caption: "Stylish Living Room",
   },
   {
-    src: "https://designz.dwell-rich.com/wp-content/uploads/2023/08/WhatsApp-Image-2023-08-22-at-4.06.43-PM-3.jpeg",
+    src: Kingston3,
     width: 1600,
     height: 1200,
     caption: "Luxury Bathroom",
   },
   {
-    src: "https://designz.dwell-rich.com/wp-content/uploads/2023/08/WhatsApp-Image-2023-08-22-at-4.06.43-PM.jpeg",
+    src: Kingston4,
     width: 1600,
     height: 1200,
     caption: "Luxury Bathroom",
   },
   {
-    src: "https://designz.dwell-rich.com/wp-content/uploads/2023/08/WhatsApp-Image-2023-08-22-at-4.06.44-PM-1.jpeg",
+    src: Kingston5,
     width: 1600,
     height: 1200,
     caption: "Luxury Bathroom",
   },
   {
-    src: "https://designz.dwell-rich.com/wp-content/uploads/2023/08/WhatsApp-Image-2023-08-22-at-4.06.44-PM-2.jpeg",
+    src: Kingston6,
     width: 1600,
     height: 1200,
     caption: "Luxury Bathroom",
   },
   {
-    src: "https://designz.dwell-rich.com/wp-content/uploads/2023/08/WhatsApp-Image-2023-08-22-at-4.06.44-PM.jpeg",
+    src: Kingston7,
     width: 1600,
     height: 1200,
     caption: "Luxury Bathroom",
   },
   {
-    src: "https://designz.dwell-rich.com/wp-content/uploads/2023/08/WhatsApp-Image-2023-08-22-at-4.06.45-PM-1.jpeg",
+    src: Kingston8,
     width: 1600,
     height: 1200,
     caption: "Luxury Bathroom",
   },
   {
-    src: "https://designz.dwell-rich.com/wp-content/uploads/2023/08/WhatsApp-Image-2023-08-22-at-4.06.45-PM-2.jpeg",
+    src: Kingston9,
     width: 1600,
     height: 1200,
     caption: "Luxury Bathroom",
   },
   {
-    src: "https://designz.dwell-rich.com/wp-content/uploads/2023/08/WhatsApp-Image-2023-08-22-at-4.06.45-PM.jpeg",
+    src: Kingston10,
     width: 1600,
     height: 1200,
     caption: "Luxury Bathroom",
   },
   {
-    src: "https://designz.dwell-rich.com/wp-content/uploads/2023/08/WhatsApp-Image-2023-08-22-at-4.06.46-PM.jpeg",
+    src: Kingston1,
     width: 1600,
     height: 1200,
     caption: "Luxury Bathroom",
   },
   {
-    src: "https://designz.dwell-rich.com/wp-content/uploads/2023/08/WhatsApp-Image-2023-08-22-at-4.06.44-PM-2.jpeg",
+    src: Kingston4,
     width: 1600,
     height: 1200,
     caption: "Luxury Bathroom",
@@ -86,8 +98,7 @@ const Portfolio1 = () => {
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage:
-              "url('https://designz.dwell-rich.com/wp-content/uploads/2023/08/WhatsApp-Image-2023-08-22-at-4.06.45-PM-1.jpeg')",
+            backgroundImage: `url(${KingstonBg})`,
           }}
         />
         <div className="absolute inset-0 bg-[#a1684e] opacity-40"></div>
@@ -155,7 +166,10 @@ const Portfolio1 = () => {
       {/* Back Button */}
       <div className="flex m:flex-row items-center justify-between gap-4 mb-10 px-6 md:px-40 w-full">
         <Link className="w-full sm:w-auto">
-          <button disabled className="w-full sm:w-auto flex items-center justify-center gap-2 bg-[#b37558] hover:bg-[#a0654d] rounded-md text-white font-semibold px-6 py-2 cursor-not-allowed">
+          <button
+            disabled
+            className="w-full sm:w-auto flex items-center justify-center gap-2 bg-[#b37558] hover:bg-[#a0654d] rounded-md text-white font-semibold px-6 py-2 cursor-not-allowed"
+          >
             <HiArrowLeft />
             Previous
           </button>

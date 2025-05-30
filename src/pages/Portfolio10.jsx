@@ -2,6 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { HiArrowLeft, HiArrowRight } from "react-icons/hi";
 
+import ReceptionCentralLondon from "../assets/ReceptionCentralLondon.webp";
+
 const Portfolio10 = () => {
   return (
     <section className="px-4 sm:px-6 md:px-12 lg:px-24 py-10">
@@ -47,9 +49,9 @@ const Portfolio10 = () => {
 
       <div className="flex justify-center items-center mb-10 px-4">
         <img
-          src="https://designz.dwell-rich.com/wp-content/uploads/2024/12/home-design.jpg"
+          src={ReceptionCentralLondon}
           alt="Reception"
-          className="w-full max-w-5xl rounded-lg object-cover shadow-md"
+          className="max-w-5xl rounded-lg object-cover shadow-md"
         />
       </div>
 

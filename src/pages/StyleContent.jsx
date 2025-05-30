@@ -6,32 +6,32 @@ const styleMaterial = {
   "style-1": {
     title: "Your Style Is Contemporary",
     image:
-      "https://designz.dwell-rich.com/wp-content/uploads/2023/08/Contemporary-style.jpg",
+      "https://img.freepik.com/premium-photo/gallery-interior-art_87720-203699.jpg?ga=GA1.1.1673158750.1693654360&semt=ais_hybrid&w=1300",
   },
   "style-2": {
     title: "Your Style Is Minimalistic",
     image:
-      "https://designz.dwell-rich.com/wp-content/uploads/2023/08/Minimalistic-style.jpg",
+      "https://img.freepik.com/free-photo/view-futuristic-lighting-lamp-design_23-2151037475.jpg?ga=GA1.1.1673158750.1693654360&semt=ais_hybrid&w=1300",
   },
   "style-3": {
     title: "Your Style Is Maximalist",
     image:
-      "https://designz.dwell-rich.com/wp-content/uploads/2023/08/Maximalist-interiors-scaled.jpg",
+      "https://img.freepik.com/premium-photo/fashionforward-party-design-showcasing-trendy-stylish-pattern-arrangement_230068-13602.jpg?ga=GA1.1.1673158750.1693654360&semt=ais_hybrid&w=1300",
   },
   "style-4": {
     title: "Your Style Is Mid-Century",
     image:
-      "https://designz.dwell-rich.com/wp-content/uploads/2023/08/Mid-century-modern.jpg",
+      "https://img.freepik.com/premium-photo/mid-century-modern-abstract-art-neural-network-generated-picture_636705-7447.jpg?ga=GA1.1.1673158750.1693654360&semt=ais_hybrid&w=1100",
   },
   "style-5": {
     title: "Your Style Is Scandinavian",
     image:
-      "https://designz.dwell-rich.com/wp-content/uploads/2023/08/Scandavian.jpg",
+      "https://img.freepik.com/premium-photo/amazing-composition-white-design-shelf-with-christmas-decoration-lights-gifts-lanterns-deer_1150096-71.jpg?ga=GA1.1.1673158750.1693654360&semt=ais_hybrid&w=1100",
   },
   "style-6": {
     title: "Your Style Is Biophilic",
     image:
-      "https://designz.dwell-rich.com/wp-content/uploads/2023/08/Biophyllic-style.jpg",
+      "https://img.freepik.com/premium-photo/creative-composition-living-room-interior-design-with-designed-armchair-black-geometric-console-plants-golden-accessoriers-urban-jungle-concpet-template_431307-6470.jpg?ga=GA1.1.1673158750.1693654360&semt=ais_hybrid&w=1100",
   },
 };
 

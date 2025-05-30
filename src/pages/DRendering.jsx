@@ -1,4 +1,4 @@
-import React from "react";
+import TwinkinVid from "../assets/TwinkinVid.mp4";
 
 const DRendering = () => {
   return (
@@ -62,7 +62,7 @@ const DRendering = () => {
         <div className="flex-1">
           <img
             className="w-full h-auto rounded-xl shadow-[0_10px_25px_rgba(0,0,0,0.5)]"
-            src="https://designz.dwell-rich.com/wp-content/uploads/2024/04/WhatsApp-Image-2024-04-04-at-4.27.59-PM-768x606.jpeg"
+            src="https://img.freepik.com/free-photo/high-angle-measuring-tools-desk-still-life_23-2150440927.jpg?ga=GA1.1.1673158750.1693654360&semt=ais_hybrid&w=1100"
             alt="Project"
           />
         </div>
@@ -74,20 +74,14 @@ const DRendering = () => {
           controls
           className="w-full md:w-1/2 lg:w-1/3 h-auto rounded-lg object-cover"
         >
-          <source
-            src="https://designz.dwell-rich.com/wp-content/uploads/2024/04/WhatsApp-Video-2024-04-03-at-10.52.54-PM-1.mp4"
-            type="video/mp4"
-          />
+          <source src={TwinkinVid} type="video/mp4" />
         </video>
 
         <video
           controls
           className="w-full md:w-1/2 lg:w-2/3 h-auto rounded-lg object-cover"
         >
-          <source
-            src="https://designz.dwell-rich.com/wp-content/uploads/2023/11/3361b987-efef-4796-afa3-a0b10aa8a284.mp4"
-            type="video/mp4"
-          />
+          <source src={TwinkinVid} type="video/mp4" />
         </video>
       </div>
     </section>

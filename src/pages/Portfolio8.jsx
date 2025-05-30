@@ -2,6 +2,9 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { HiArrowLeft, HiArrowRight } from "react-icons/hi";
 
+import TwinkinMain from "../assets/TwinkinMain.webp";
+import TwinkinVid from "../assets/TwinkinVid.mp4";
+
 const Portfolio8 = () => {
   return (
     <section className="px-4 sm:px-6 md:px-12 lg:px-24 py-10 max-w-screen-xl mx-auto">
@@ -45,11 +48,11 @@ const Portfolio8 = () => {
       </div>
 
       <div className="w-full mt-10 mb-20 px-4 sm:px-6 md:px-12">
-        <video controls className="w-full aspect-video rounded-lg object-cover">
-          <source
-            src="https://designz.dwell-rich.com/wp-content/uploads/2024/04/WhatsApp-Video-2024-04-03-at-10.52.54-PM-1.mp4"
-            type="video/mp4"
-          />
+        <video
+          controls
+          className="w-full aspect-video rounded-lg object-contain"
+        >
+          <source src={TwinkinVid} type="video/mp4" />
         </video>
       </div>
 

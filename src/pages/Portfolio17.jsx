@@ -4,9 +4,11 @@ import "photoswipe/style.css";
 import { Link } from "react-router-dom";
 import { HiArrowLeft, HiArrowRight } from "react-icons/hi";
 
+import Wine from "../assets/Wine.webp"
+
 const images = [
   {
-    src: "https://st.hzcdn.com/fimgs/eef1ac5a06ab9e45_3260-w312-h312-b0-p0---wine-cellar.jpg",
+    src: Wine,
     width: 1600,
     height: 1200,
     caption: "Modern ",

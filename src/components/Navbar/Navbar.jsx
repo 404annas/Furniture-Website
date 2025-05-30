@@ -3,6 +3,8 @@ import { Link, useLocation } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { AiOutlinePlus, AiOutlineMinus } from "react-icons/ai";
 
+import DesignzLogo from "../../assets/DesignzLogo.png";
+
 const navItems = [
   { path: "/", label: "Home" },
   { path: "/about", label: "About Us" },
@@ -54,7 +56,7 @@ const Navbar = () => {
         <Link to="/">
           <img
             className="w-20 md:w-24 h-16 md:h-20 object-contain"
-            src="https://designz.dwell-rich.com/wp-content/uploads/2023/06/DR_set-removebg-preview-e1701030039725.png"
+            src={DesignzLogo}
             alt="Logo"
           />
         </Link>

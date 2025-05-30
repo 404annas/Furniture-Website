@@ -1,5 +1,7 @@
 import React from "react";
 
+import SalehaImg from "../assets/Saleha.webp";
+
 const About = () => {
   return (
     <section className="px-4 sm:px-6 lg:px-36 py-12">
@@ -15,7 +17,7 @@ const About = () => {
       <div className="flex flex-col lg:flex-row items-center gap-10">
         <img
           className="rounded-full w-64 sm:w-80 lg:w-[500px] shadow-[0_10px_25px_rgba(0,0,0,0.5)] object-cover"
-          src="https://designz.dwell-rich.com/wp-content/uploads/2023/09/imageedit_57_3173469396-e1695047666957-650x650.jpg"
+          src={SalehaImg}
           alt="About Image"
         />
 

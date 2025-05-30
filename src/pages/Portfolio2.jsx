@@ -1,16 +1,15 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import { HiArrowLeft, HiArrowRight } from "react-icons/hi";
+import Biblophic from "../assets/Biblophic.webp";
 
 const Portfolio2 = () => {
   return (
     <section>
       <div className="relative h-[350px] flex items-center justify-center text-center">
         <div
-          className="absolute inset-0 bg-cover bg-center"
+          className="absolute inset-0 bg-cover bg-bottom"
           style={{
-            backgroundImage:
-              "url('https://designz.dwell-rich.com/wp-content/uploads/2023/11/imageedit_16_6242385301.jpg')",
+            backgroundImage: `url(${Biblophic})`,
           }}
         />
         <div className="absolute inset-0 bg-[#a1684e] opacity-40"></div>
@@ -19,7 +18,7 @@ const Portfolio2 = () => {
         </h1>
       </div>
 
-      <div className="w-full px-4 sm:px-6 md:px-10 my-10">
+      {/* <div className="w-full px-4 sm:px-6 md:px-10 my-10">
         <video
           controls
           className="w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] rounded-lg object-cover mb-12"
@@ -29,9 +28,9 @@ const Portfolio2 = () => {
             type="video/mp4"
           />
         </video>
-      </div>
+      </div> */}
 
-      <div className="flex flex-col gap-6 text-base sm:text-lg text-black text-center max-w-5xl mx-auto px-4 sm:px-6 mb-10">
+      <div className="flex flex-col gap-6 text-base sm:text-lg text-black text-center max-w-5xl mx-auto px-4 mt-4 sm:px-6 mb-10">
         <p>
           An Edwardian house in South Croydon, which is a suburban area in the
           London Borough of Croydon, with a Conservatory with large windows on

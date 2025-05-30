@@ -2,6 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { TbBrandThreads } from "react-icons/tb";
 
+import DesignzLogo from "../../assets/DesignzLogo.png";
+
 const Footer = () => {
   return (
     <footer className="bg-[#F7E7CE] body-font text-black">
@@ -9,7 +11,7 @@ const Footer = () => {
         <Link to="/">
           <img
             className="w-16 h-14 object-contain"
-            src="https://designz.dwell-rich.com/wp-content/uploads/2023/06/DR_set-removebg-preview-e1701030039725.png"
+            src={DesignzLogo}
             alt="Logo"
           />
         </Link>
@@ -71,7 +73,7 @@ const Footer = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <TbBrandThreads className="w-6 h-6 md:w-7 md:h-7"/>
+            <TbBrandThreads className="w-6 h-6 md:w-7 md:h-7" />
           </a>
         </div>
       </div>

@@ -4,39 +4,46 @@ import "photoswipe/style.css";
 import { Link } from "react-router-dom";
 import { HiArrowLeft, HiArrowRight } from "react-icons/hi";
 
+import TKitchenMain from "../assets/TKitchenMain.webp";
+import TKitchen1 from "../assets/TKitchen1.webp";
+import TKitchen2 from "../assets/TKitchen2.webp";
+import TKitchen3 from "../assets/TKitchen3.webp";
+import TKitchen4 from "../assets/TKitchen4.webp";
+import TKitchen5 from "../assets/TKitchen5.webp";
+
 const images = [
   {
-    src: "https://st.hzcdn.com/fimgs/fb616a9306b37db0_8039-w312-h312-b0-p0---kitchen.jpg",
+    src: TKitchenMain,
     width: 1600,
     height: 1200,
     caption: "Modern ",
   },
   {
-    src: "https://st.hzcdn.com/fimgs/ce2169d806b37db2_8141-w312-h312-b0-p0---kitchen.jpg",
+    src: TKitchen1,
     width: 1600,
     height: 1200,
     caption: "Luxury ",
   },
   {
-    src: "https://st.hzcdn.com/fimgs/1b41ed0606b37db4_9158-w312-h312-b0-p0---spaces.jpg",
+    src: TKitchen2,
     width: 1600,
     height: 1200,
     caption: "Luxury ",
   },
   {
-    src: "https://st.hzcdn.com/fimgs/df0143ba06b38e8b_3471-w312-h312-b0-p0---kitchen.jpg",
+    src: TKitchen3,
     width: 1600,
     height: 1200,
     caption: "Luxury ",
   },
   {
-    src: "https://st.hzcdn.com/fimgs/37f1dbc106b37dad_8035-w312-h312-b0-p0---kitchen.jpg",
+    src: TKitchen4,
     width: 1600,
     height: 1200,
     caption: "Luxury ",
   },
   {
-    src: "https://st.hzcdn.com/fimgs/7e21072906b38e88_7542-w312-h312-b0-p0---kitchen.jpg",
+    src: TKitchen5,
     width: 1600,
     height: 1200,
     caption: "Luxury ",

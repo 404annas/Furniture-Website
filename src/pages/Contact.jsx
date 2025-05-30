@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 const Contact = () => {
   const [name, setName] = useState("");
@@ -24,12 +24,12 @@ const Contact = () => {
   return (
     <section className="bg-white">
       {/* Heading Section */}
-      <div className="relative h-[200px] flex items-center justify-center text-center">
+      <div className="relative h-[250px] flex items-center justify-center text-center">
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
             backgroundImage:
-              "url('https://designz.dwell-rich.com/wp-content/uploads/2023/07/9_Contact_Hotel-Hero.jpg')",
+              "url('https://img.freepik.com/premium-photo/illustration-living-room-interior_252025-70022.jpg?ga=GA1.1.1673158750.1693654360&semt=ais_hybrid&w=1400')",
           }}
         ></div>
         <div className="absolute inset-0 bg-[#b37558] opacity-70"></div>

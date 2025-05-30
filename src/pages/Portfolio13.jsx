@@ -4,75 +4,88 @@ import "photoswipe/style.css";
 import { Link } from "react-router-dom";
 import { HiArrowLeft, HiArrowRight } from "react-icons/hi";
 
+import Hallway1 from "../assets/Hallway1.webp";
+import Hallway2 from "../assets/Hallway2.webp";
+import Hallway3 from "../assets/Hallway3.webp";
+import Hallway4 from "../assets/Hallway4.webp";
+import Chimney1 from "../assets/Chimney1.webp";
+import Chimney2 from "../assets/Chimney2.webp";
+import Chimney3 from "../assets/Chimney3.webp";
+import Chimney4 from "../assets/Chimney4.webp";
+import Air4 from "../assets/Air4.webp";
+import Air3 from "../assets/Air3.webp";
+import Bespoke2 from "../assets/Bespoke2.webp";
+import Kingston4 from "../assets/Kingston4.webp";
+
 const images = [
   {
-    src: "https://designz.dwell-rich.com/wp-content/uploads/2024/12/WhatsApp-Image-2024-12-12-at-12.29.10-PM-1.jpeg-650x650.jpg",
+    src: Hallway1,
     width: 1600,
     height: 1200,
     caption: "Modern ",
   },
   {
-    src: "https://designz.dwell-rich.com/wp-content/uploads/2024/12/WhatsApp-Image-2024-12-12-at-12.29.10-PM-3.jpeg-1-650x650.jpg",
+    src: Chimney1,
     width: 1600,
     height: 1200,
     caption: "Stylish ",
   },
   {
-    src: "https://designz.dwell-rich.com/wp-content/uploads/2024/12/WhatsApp-Image-2024-12-12-at-12.29.10-PM-5.jpeg-1-650x650.jpg",
+    src: Air4,
     width: 1600,
     height: 1200,
     caption: "Stylish ",
   },
   {
-    src: "https://designz.dwell-rich.com/wp-content/uploads/2024/12/WhatsApp-Image-2024-12-12-at-12.29.10-PM-6.jpeg-1-650x650.jpg",
+    src: Chimney4,
     width: 1600,
     height: 1200,
     caption: "Stylish ",
   },
   {
-    src: "https://designz.dwell-rich.com/wp-content/uploads/2024/12/WhatsApp-Image-2024-12-12-at-12.29.10-PM.jpeg-1-650x650.jpg",
+    src: Hallway4,
     width: 1600,
     height: 1200,
     caption: "Stylish ",
   },
   {
-    src: "https://designz.dwell-rich.com/wp-content/uploads/2024/12/WhatsApp-Image-2024-12-12-at-12.29.10-PM-3.jpeg-650x650.jpg",
+    src: Chimney2,
     width: 1600,
     height: 1200,
     caption: "Stylish ",
   },
   {
-    src: "https://designz.dwell-rich.com/wp-content/uploads/2024/12/WhatsApp-Image-2024-12-12-at-12.29.10-PM-3.jpeg-650x650.jpg",
+    src: Hallway3,
     width: 1600,
     height: 1200,
     caption: "Stylish ",
   },
   {
-    src: "https://designz.dwell-rich.com/wp-content/uploads/2024/12/WhatsApp-Image-2024-12-12-at-12.29.11-PM.jpeg-1-650x650.jpg",
+    src: Air3,
     width: 1600,
     height: 1200,
     caption: "Stylish ",
   },
   {
-    src: "https://designz.dwell-rich.com/wp-content/uploads/2024/12/WhatsApp-Image-2024-12-12-at-12.29.10-PM-2.jpeg-1-650x650.jpg",
+    src: Kingston4,
     width: 1600,
     height: 1200,
     caption: "Stylish ",
   },
   {
-    src: "https://designz.dwell-rich.com/wp-content/uploads/2024/12/WhatsApp-Image-2024-12-12-at-12.29.10-PM-5.jpeg-1-650x650.jpg",
+    src: Chimney3,
     width: 1600,
     height: 1200,
     caption: "Stylish ",
   },
   {
-    src: "https://designz.dwell-rich.com/wp-content/uploads/2024/12/WhatsApp-Image-2024-12-12-at-12.29.11-PM.jpeg-2-650x650.jpg",
+    src: Hallway2,
     width: 1600,
     height: 1200,
     caption: "Stylish ",
   },
   {
-    src: "https://designz.dwell-rich.com/wp-content/uploads/2024/12/WhatsApp-Image-2024-12-12-at-12.29.10-PM-2.jpeg-650x650.jpg",
+    src: Bespoke2,
     width: 1600,
     height: 1200,
     caption: "Stylish ",

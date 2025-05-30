@@ -5,32 +5,32 @@ const styleImages = [
   {
     id: "style-1",
     title: "Contemporary style",
-    src: "https://designz.dwell-rich.com/wp-content/uploads/2023/08/Contemporary-style-1024x682.jpg",
+    src: "https://img.freepik.com/premium-photo/gallery-interior-art_87720-203699.jpg?ga=GA1.1.1673158750.1693654360&semt=ais_hybrid&w=1300",
   },
   {
     id: "style-2",
     title: "Minimalistic style",
-    src: "https://designz.dwell-rich.com/wp-content/uploads/2023/08/Minimalistic-style-1024x682.jpg",
+    src: "https://img.freepik.com/free-photo/view-futuristic-lighting-lamp-design_23-2151037475.jpg?ga=GA1.1.1673158750.1693654360&semt=ais_hybrid&w=1300",
   },
   {
     id: "style-3",
     title: "Maximalist interiors",
-    src: "https://designz.dwell-rich.com/wp-content/uploads/2023/08/Maximalist-interiors-1024x591.jpg",
+    src: "https://img.freepik.com/premium-photo/fashionforward-party-design-showcasing-trendy-stylish-pattern-arrangement_230068-13602.jpg?ga=GA1.1.1673158750.1693654360&semt=ais_hybrid&w=1300",
   },
   {
     id: "style-4",
     title: "Mid-century modern style",
-    src: "https://designz.dwell-rich.com/wp-content/uploads/2023/08/Mid-century-modern-1024x682.jpg",
+    src: "https://img.freepik.com/premium-photo/mid-century-modern-abstract-art-neural-network-generated-picture_636705-7447.jpg?ga=GA1.1.1673158750.1693654360&semt=ais_hybrid&w=1100",
   },
   {
     id: "style-5",
     title: "Scandinavian style",
-    src: "https://designz.dwell-rich.com/wp-content/uploads/2023/08/Scandavian-1024x682.jpg",
+    src: "https://img.freepik.com/premium-photo/amazing-composition-white-design-shelf-with-christmas-decoration-lights-gifts-lanterns-deer_1150096-71.jpg?ga=GA1.1.1673158750.1693654360&semt=ais_hybrid&w=1100",
   },
   {
     id: "style-6",
     title: "Biophyllic style",
-    src: "https://designz.dwell-rich.com/wp-content/uploads/2023/08/Biophyllic-style-1024x681.jpg",
+    src: "https://img.freepik.com/premium-photo/creative-composition-living-room-interior-design-with-designed-armchair-black-geometric-console-plants-golden-accessoriers-urban-jungle-concpet-template_431307-6470.jpg?ga=GA1.1.1673158750.1693654360&semt=ais_hybrid&w=1100",
   },
 ];
 
@@ -79,7 +79,7 @@ const Style = () => {
           className="absolute inset-0 bg-cover bg-center"
           style={{
             backgroundImage:
-              "url('https://designz.dwell-rich.com/wp-content/uploads/2023/06/WhatsApp-Image-2023-06-26-at-11.50.45-AM.jpeg')",
+              "url('https://img.freepik.com/free-photo/modern-styled-entryway_23-2150695915.jpg?ga=GA1.1.1673158750.1693654360&semt=ais_hybrid&w=1100')",
           }}
         />
         <div className="absolute inset-0 bg-[#a1684e] opacity-60"></div>

@@ -1,15 +1,13 @@
-import React from "react";
-
 const PM = () => {
   return (
     <section>
       {/* Hero Section */}
-      <div className="relative h-[300px] sm:h-[350px] md:h-[450px] flex items-center justify-center text-center">
+      <div className="relative h-[300px] sm:h-[350px] flex items-center justify-center text-center">
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
             backgroundImage:
-              "url('https://designz.dwell-rich.com/wp-content/uploads/2023/08/Project-managment-scaled.jpg')",
+              "url('https://img.freepik.com/free-photo/real-estate-desk-with-keys_23-2147653337.jpg?ga=GA1.1.1673158750.1693654360&semt=ais_hybrid&w=1100')",
           }}
         ></div>
         <div className="absolute inset-0 bg-[#a1684e] opacity-60"></div>

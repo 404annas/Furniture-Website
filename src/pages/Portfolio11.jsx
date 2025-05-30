@@ -4,27 +4,32 @@ import "photoswipe/style.css";
 import { Link } from "react-router-dom";
 import { HiArrowLeft, HiArrowRight } from "react-icons/hi";
 
+import SevenBedMainS from "../assets/SevenBedMainS.webp";
+import SevenBed1 from "../assets/SevenBed1.webp";
+import SevenBed2 from "../assets/SevenBed2.webp";
+import WhiteGamla from "../assets/WhiteGamla.webp";
+
 const images = [
   {
-    src: "https://designz.dwell-rich.com/wp-content/uploads/2024/12/cda15fea06c90d4d_0191-w378-h378-b0-p0-contemporary-living-room.webp",
+    src: SevenBed1,
     width: 1600,
     height: 1200,
     caption: "Modern",
   },
   {
-    src: "https://designz.dwell-rich.com/wp-content/uploads/2024/12/f771178b06c90d44_0087-w378-h378-b0-p0-contemporary-living-room.webp",
+    src: SevenBedMainS,
     width: 1600,
     height: 1200,
     caption: "Stylish",
   },
   {
-    src: "https://designz.dwell-rich.com/wp-content/uploads/2024/12/a9f143eb06c90d47_0099-w378-h378-b0-p0-contemporary-living-room.webp",
+    src: SevenBed2,
     width: 1600,
     height: 1200,
     caption: "Stylish",
   },
   {
-    src: "https://designz.dwell-rich.com/wp-content/uploads/2024/12/home-design-1-1536x1440.jpg",
+    src: WhiteGamla,
     width: 1600,
     height: 1200,
     caption: "Stylish",

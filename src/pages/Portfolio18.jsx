@@ -4,57 +4,68 @@ import "photoswipe/style.css";
 import { Link } from "react-router-dom";
 import { HiArrowLeft, HiArrowRight } from "react-icons/hi";
 
+import WardrobeMain from "../assets/WardrobeMain.webp"
+import Wardrobe1 from "../assets/Wardrobe1.webp"
+import Wardrobe2 from "../assets/Wardrobe2.webp"
+import Wardrobe3 from "../assets/Wardrobe3.webp"
+import Wardrobe4 from "../assets/Wardrobe4.webp"
+import Wardrobe5 from "../assets/Wardrobe5.webp"
+import Wardrobe6 from "../assets/Wardrobe6.webp"
+import Wardrobe7 from "../assets/Wardrobe7.webp"
+import Wardrobe8 from "../assets/Wardrobe8.webp"
+import Wardrobe9 from "../assets/Wardrobe9.webp"
+
 const images = [
   {
-    src: "https://st.hzcdn.com/fimgs/2f8106c306b38c4a_7565-w312-h312-b0-p0---bedroom.jpg",
+    src: Wardrobe1,
     width: 1600,
     height: 1200,
     caption: "Modern ",
   },
   {
-    src: "https://st.hzcdn.com/fimgs/8891992f06b38c4c_2899-w312-h312-b0-p0---wardrobe.jpg",
+    src: Wardrobe2,
     width: 1600,
     height: 1200,
     caption: "Luxury ",
   },
   {
-    src: "https://st.hzcdn.com/fimgs/9c41e65f06b38c4e_2900-w312-h312-b0-p0---bedroom.jpg",
+    src: Wardrobe3,
     width: 1600,
     height: 1200,
     caption: "Luxury ",
   },
   {
-    src: "https://st.hzcdn.com/fimgs/b311f96d06b38c50_7847-w312-h312-b0-p0---home-office.jpg",
+    src: Wardrobe4,
     width: 1600,
     height: 1200,
     caption: "Luxury ",
   },
   {
-    src: "https://st.hzcdn.com/fimgs/7431ef0c06b38c52_2901-w312-h312-b0-p0---garage.jpg",
+    src: Wardrobe5,
     width: 1600,
     height: 1200,
     caption: "Luxury ",
   },
   {
-    src: "https://st.hzcdn.com/fimgs/6e91e40406b38c58_2905-w312-h312-b0-p0---wardrobe.jpg",
+    src: Wardrobe9,
     width: 1600,
     height: 1200,
     caption: "Luxury ",
   },
   {
-    src: "https://st.hzcdn.com/fimgs/f801974e06b38c57_2905-w312-h312-b0-p0---bedroom.jpg",
+    src: Wardrobe6,
     width: 1600,
     height: 1200,
     caption: "Luxury ",
   },
   {
-    src: "https://st.hzcdn.com/fimgs/e501f08f06b38c59_8036-w312-h312-b0-p0---wardrobe.jpg",
+    src: Wardrobe7,
     width: 1600,
     height: 1200,
     caption: "Luxury ",
   },
   {
-    src: "https://st.hzcdn.com/fimgs/9221ec9306b38c55_7565-w312-h312-b0-p0---garage.jpg",
+    src: Wardrobe8,
     width: 1600,
     height: 1200,
     caption: "Luxury ",
