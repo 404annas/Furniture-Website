@@ -1,6 +1,7 @@
 import React from "react";
 
 import SalehaImg from "../assets/Saleha.webp";
+import Saleha3 from "../assets/Saleha3.jpg"
 
 const About = () => {
   return (
@@ -17,7 +18,7 @@ const About = () => {
       <div className="flex flex-col lg:flex-row items-center gap-10">
         <img
           className="rounded-full w-64 sm:w-80 lg:w-[500px] shadow-[0_10px_25px_rgba(0,0,0,0.5)] object-cover"
-          src={SalehaImg}
+          src={Saleha3}
           alt="About Image"
         />
 

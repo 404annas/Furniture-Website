@@ -1,66 +1,79 @@
-import React from "react";
 import { Gallery, Item } from "react-photoswipe-gallery";
 import "photoswipe/style.css";
 
+import KitchenMain from "../assets/KitchenMain.webp";
+import Kitchen1 from "../assets/Kitchen1.webp";
+import Kitchen2 from "../assets/Kitchen2.webp";
+import Kitchen3 from "../assets/Kitchen3.webp";
+import Kitchen4 from "../assets/Kitchen4.webp";
+import Kitchen5 from "../assets/Kitchen5.webp";
+
+import TKitchenMain from "../assets/TKitchenMain.webp";
+import TKitchen1 from "../assets/TKitchen1.webp";
+import TKitchen2 from "../assets/TKitchen2.webp";
+import TKitchen3 from "../assets/TKitchen3.webp";
+import TKitchen4 from "../assets/TKitchen4.webp";
+import TKitchen5 from "../assets/TKitchen5.webp";
+
 const imageData = [
   {
-    src: "https://images.unsplash.com/photo-1556911220-bff31c812dba?w=1200",
-    thumbnail:
-      "https://images.unsplash.com/photo-1556911220-bff31c812dba?w=500",
+    src: KitchenMain,
+    thumbnail: KitchenMain,
     alt: "Kitchen 1",
   },
   {
-    src: "https://images.unsplash.com/photo-1484154218962-a197022b5858?w=1200",
-    thumbnail:
-      "https://images.unsplash.com/photo-1484154218962-a197022b5858?w=500",
+    src: Kitchen1,
+    thumbnail: Kitchen1,
     alt: "Kitchen 2",
   },
   {
-    src: "https://images.unsplash.com/photo-1507089947368-19c1da9775ae?w=1200",
-    thumbnail:
-      "https://images.unsplash.com/photo-1507089947368-19c1da9775ae?w=500",
+    src: Kitchen2,
+    thumbnail: Kitchen2,
     alt: "Kitchen 3",
   },
   {
-    src: "https://images.unsplash.com/photo-1622372738946-62e02505feb3?w=1200",
-    thumbnail:
-      "https://images.unsplash.com/photo-1622372738946-62e02505feb3?w=500",
+    src: Kitchen3,
+    thumbnail: Kitchen3,
     alt: "Kitchen 4",
   },
   {
-    src: "https://plus.unsplash.com/premium_photo-1661962720375-ce9097fb4d69?w=1200",
-    thumbnail:
-      "https://plus.unsplash.com/premium_photo-1661962720375-ce9097fb4d69?w=500",
+    src: Kitchen4,
+    thumbnail: Kitchen4,
     alt: "Kitchen 5",
   },
   {
-    src: "https://images.unsplash.com/photo-1600489000022-c2086d79f9d4?w=1200",
-    thumbnail:
-      "https://images.unsplash.com/photo-1600489000022-c2086d79f9d4?w=500",
+    src: Kitchen5,
+    thumbnail: Kitchen5,
     alt: "Kitchen 6",
   },
   {
-    src: "https://images.unsplash.com/photo-1556910096-6f5e72db6803?w=1200",
-    thumbnail:
-      "https://images.unsplash.com/photo-1556910096-6f5e72db6803?w=500",
+    src: TKitchenMain,
+    thumbnail: TKitchenMain,
     alt: "Kitchen 7",
   },
   {
-    src: "https://images.unsplash.com/photo-1588854337236-6889d631faa8?w=1200",
-    thumbnail:
-      "https://images.unsplash.com/photo-1588854337236-6889d631faa8?w=500",
+    src: TKitchen1,
+    thumbnail: TKitchen1,
     alt: "Kitchen 8",
   },
   {
-    src: "https://plus.unsplash.com/premium_photo-1661317296820-16fd638ee06f?w=1200",
-    thumbnail:
-      "https://plus.unsplash.com/premium_photo-1661317296820-16fd638ee06f?w=500",
+    src: TKitchen2,
+    thumbnail: TKitchen2,
     alt: "Kitchen 9",
   },
   {
-    src: "https://images.unsplash.com/photo-1600684388091-627109f3cd60?w=1200",
-    thumbnail:
-      "https://images.unsplash.com/photo-1600684388091-627109f3cd60?w=500",
+    src: TKitchen3,
+    thumbnail: TKitchen3,
+    alt: "Kitchen 10",
+  },
+  {
+    src: TKitchen4,
+    thumbnail: TKitchen4,
+    alt: "Kitchen 10",
+  },
+  {
+    src: TKitchen5,
+    thumbnail: TKitchen5,
     alt: "Kitchen 10",
   },
 ];

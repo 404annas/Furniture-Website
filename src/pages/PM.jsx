@@ -1,3 +1,5 @@
+import PmImg from "../assets/PM.jpg"
+
 const PM = () => {
   return (
     <section>
@@ -7,7 +9,7 @@ const PM = () => {
           className="absolute inset-0 bg-cover bg-center"
           style={{
             backgroundImage:
-              "url('https://img.freepik.com/free-photo/real-estate-desk-with-keys_23-2147653337.jpg?ga=GA1.1.1673158750.1693654360&semt=ais_hybrid&w=1100')",
+              `url(${PmImg})`,
           }}
         ></div>
         <div className="absolute inset-0 bg-[#a1684e] opacity-60"></div>

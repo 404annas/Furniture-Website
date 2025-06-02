@@ -15,7 +15,7 @@ import Chimney4 from "../assets/Chimney4.webp";
 import Air4 from "../assets/Air4.webp";
 import Air3 from "../assets/Air3.webp";
 import Bespoke2 from "../assets/Bespoke2.webp";
-import Kingston4 from "../assets/Kingston4.webp";
+import Kingston4 from "../assets/Kingston4.jpg";
 
 const images = [
   {

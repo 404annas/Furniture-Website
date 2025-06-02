@@ -1,12 +1,16 @@
-import React from "react";
 import { FaArrowRight, FaCouch, FaHardHat, FaTasks } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import Testimonials from "./Testimonials";
 import Members from "./Members";
 import { GiWoodBeam } from "react-icons/gi";
 
-import DpRight from "../assets/DpRight.avif";
-import Bathroom13 from "../assets/Bathroom13.jpg";
+import Joinery from "../assets/Joinery.jpg";
+import home from "../assets/home.jpg";
+import designProcess from "../assets/design-process-1.jpg";
+import Bathroom from "../assets/Bathroom.jpg";
+import Kitchen from "../assets/Kitchen.jpg";
+import Bed from "../assets/Bed.jpeg";
+import Contact from "../assets/Contact.jpg";
 
 const Home = () => {
   const baseItems = [
@@ -36,8 +40,7 @@ const Home = () => {
       <div
         className="relative bg-cover bg-center w-full"
         style={{
-          backgroundImage:
-            "url('https://img.freepik.com/free-photo/elegant-pink-living-room-with-stylish-furniture-decor_23-2151982525.jpg?ga=GA1.1.1673158750.1693654360&semt=ais_hybrid&w=1080')",
+          backgroundImage: `url(${home})`,
         }}
       >
         <div className="absolute inset-0 bg-[#b37558] bg-opacity-30"></div>
@@ -174,8 +177,7 @@ const Home = () => {
       <div
         className="relative bg-cover bg-center py-20"
         style={{
-          backgroundImage:
-            "url('https://img.freepik.com/premium-photo/stylish-floral-composition-with-beautiful-plants-cacti-succulents-design-hipster-pots-coffee-table-natural-living-room-green-walls-home-gardening-concept-template_431307-4008.jpg?ga=GA1.1.1673158750.1693654360&semt=ais_hybrid&w=1000')",
+          backgroundImage: `url(${Contact})`,
         }}
       >
         <div className="absolute inset-0 bg-white/20"></div>
@@ -204,7 +206,7 @@ const Home = () => {
           {/* Card 2 */}
           <img
             className="w-full h-auto object-cover rounded-xl"
-            src={DpRight}
+            src={designProcess}
             alt="Design process"
           />
         </div>
@@ -222,8 +224,7 @@ const Home = () => {
       <div
         className="relative bg-cover bg-center min-h-screen flex flex-col items-center justify-start px-4 py-10"
         style={{
-          backgroundImage:
-            "url('https://img.freepik.com/premium-photo/modern-scandinavian-living-room-interior-with-brown-poster-frame-design-retro-commode-rattan-decor-carpet-plants-maps-elegant-accessories-stylish-home-staging-japandi_431307-2206.jpg?ga=GA1.1.1673158750.1693654360&semt=ais_hybrid&w=740')",
+          backgroundImage: `url('https://img.freepik.com/premium-photo/modern-scandinavian-living-room-interior-with-brown-poster-frame-design-retro-commode-rattan-decor-carpet-plants-maps-elegant-accessories-stylish-home-staging-japandi_431307-2206.jpg?ga=GA1.1.1673158750.1693654360&semt=ais_hybrid&w=740')`,
         }}
       >
         <div className="absolute inset-0 bg-black bg-opacity-20"></div>
@@ -249,7 +250,7 @@ const Home = () => {
             </div>
             <img
               className="w-full max-w-xs sm:max-w-sm md:w-[300px] mt-6 md:mt-0 md:ml-6 rounded-lg mr-0 md:mr-10 shadow-[0_10px_25px_rgba(0,0,0,0.5)] hover:scale-95 transition-all duration-300"
-              src="https://img.freepik.com/premium-photo/antique-wooden-door-with-bronze-handle-retro-stone-house_700453-9746.jpg?ga=GA1.1.1673158750.1693654360&semt=ais_hybrid&w=740"
+              src={Joinery}
               alt="Joinery"
             />
           </div>
@@ -269,7 +270,7 @@ const Home = () => {
             </div>
             <img
               className="w-full max-w-xs sm:max-w-sm md:w-[500px] mt-6 md:mt-0 md:mr-10 rounded-lg shadow-[0_10px_25px_rgba(0,0,0,0.5)] hover:scale-95 transition-all duration-300"
-              src="https://img.freepik.com/premium-photo/bathroom-with-large-shower-tub-with-shower-head_1310085-9138.jpg?ga=GA1.1.1673158750.1693654360&semt=ais_hybrid&w=900"
+              src={Bathroom}
               alt="Bathroom"
             />
           </div>
@@ -297,7 +298,7 @@ const Home = () => {
             </div>
             <img
               className="w-full max-w-xs sm:max-w-sm md:w-[400px] mt-6 md:mt-0 md:ml-6 rounded-lg shadow-[0_10px_25px_rgba(0,0,0,0.5)] hover:scale-95 transition-all duration-300"
-              src="https://img.freepik.com/free-photo/beautiful-kitchen-interior-design_23-2150976553.jpg?ga=GA1.1.1673158750.1693654360&semt=ais_hybrid&w=740"
+              src={Kitchen}
               alt="Kitchens"
             />
           </div>
@@ -310,7 +311,7 @@ const Home = () => {
             <div className="relative">
               <img
                 className="w-full h-[300px] sm:h-[400px] md:h-[500px] object-cover rounded-lg shadow-[0_10px_25px_rgba(0,0,0,0.5)] hover:scale-95 transition-all duration-300"
-                src="https://img.freepik.com/premium-photo/modern-luxury-bedroom_614034-48056.jpg?ga=GA1.1.1673158750.1693654360&semt=ais_hybrid&w=1300"
+                src={Bed}
                 alt="3D Visualisation"
               />
               <div className="absolute bottom-6 sm:bottom-10 left-6 sm:left-10 border-2 border-white text-white font-bold px-4 py-2 rounded shadow rbs text-sm sm:text-lg bg-black/40 backdrop-blur-sm">

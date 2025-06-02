@@ -1,19 +1,22 @@
 import { Link } from "react-router-dom";
 
-import KitchenMain from "../assets/KitchenMain.webp"
-import Kingston7 from "../assets/Kingston7.webp";
+import KitchenMain from "../assets/KitchenMain.webp";
+import Kingston7 from "../assets/Kingston7.jpeg";
 import TKitchenMain from "../assets/TKitchenMain.webp";
-import TwinkinMain from "../assets/TwinkinMain.webp"
-import ReceptionCentralLondon from "../assets/ReceptionCentralLondon.webp"
+import TwinkinMain from "../assets/TwinkinMain.webp";
+import ReceptionCentralLondon from "../assets/ReceptionCentralLondon.webp";
 import AirMain from "../assets/AirMain.webp";
 import WardrobeMain from "../assets/WardrobeMain.webp";
 import Wine from "../assets/Wine.webp";
 import SevenBed from "../assets/SevenBedMain.webp";
-import Biblophic from "../assets/Biblophic.webp";
-import HallwayMain from "../assets/HallwayMain.jpg"
+import Biblophic from "../assets/BioMain.jpg";
+import HallwayMain from "../assets/HallwayMain.jpg";
 import Bespoke1 from "../assets/Bespoke1.webp";
 import Wardrobe4 from "../assets/Wardrobe4.webp";
 import SevenBed2 from "../assets/SevenBed2.webp";
+import GardenMain from "../assets/GardenMain.jpg";
+import CollaborativeHubImg from "../assets/CollborativeHub.jpg";
+import AfterMain from "../assets/AfterMain.webp";
 
 const allItems = [
   {
@@ -27,7 +30,7 @@ const allItems = [
     route: "/p5-bespoke-joinery-projects",
   },
   {
-    src: "https://st.hzcdn.com/fimgs/07114a7f07d95ad9_6206-w312-h312-b0-p0---living-room.jpg",
+    src: AfterMain,
     title: "Sutton, London- Contemporary Style Extension & Renovation",
     route: "/p16-sutton-style",
   },
@@ -91,21 +94,21 @@ const allItems = [
     title: "Biophilic Oasis Conservatory",
     route: "/p2-biophilic-oasis-conservatory",
   },
-  // {
-  //   src: "https://designz.dwell-rich.com/wp-content/uploads/2023/11/Screenshot-2023-11-29-160007.png",
-  //   title: "Collaborative Hub",
-  //   route: "/p3-collaborative-hub",
-  // },
+  {
+    src: CollaborativeHubImg,
+    title: "Collaborative Hub",
+    route: "/p3-collaborative-hub",
+  },
   {
     src: HallwayMain,
     title: "Gilded Elegance Passage",
     route: "/p4-gilded-elegance-passage",
   },
-  // {
-  //   src: "https://designz.dwell-rich.com/wp-content/uploads/2024/12/WhatsApp-Image-2024-12-12-at-12.29.11-PM-2.jpeg-1.jpg",
-  //   title: "Garden design-Kingston",
-  //   route: "/p7-garden-design-kingston",
-  // },
+  {
+    src: GardenMain,
+    title: "Garden design-Kingston",
+    route: "/p7-garden-design-kingston",
+  },
 ];
 
 const Portfolio = () => {

@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { HiArrowLeft, HiArrowRight } from "react-icons/hi";
-import Biblophic from "../assets/Biblophic.webp";
+import Biblophic from "../assets/BioMain.jpg";
+import BioVid from "../assets/BioVid.mp4";
 
 const Portfolio2 = () => {
   return (
@@ -18,17 +19,14 @@ const Portfolio2 = () => {
         </h1>
       </div>
 
-      {/* <div className="w-full px-4 sm:px-6 md:px-10 my-10">
+      <div className="w-full px-4 sm:px-6 md:px-10 my-10">
         <video
           controls
           className="w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] rounded-lg object-cover mb-12"
         >
-          <source
-            src="https://designz.dwell-rich.com/wp-content/uploads/2023/11/3361b987-efef-4796-afa3-a0b10aa8a284.mp4"
-            type="video/mp4"
-          />
+          <source src={BioVid} type="video/mp4" />
         </video>
-      </div> */}
+      </div>
 
       <div className="flex flex-col gap-6 text-base sm:text-lg text-black text-center max-w-5xl mx-auto px-4 mt-4 sm:px-6 mb-10">
         <p>

@@ -1,36 +1,44 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
+import ContemporaryStyle from "../assets/Contemporary-style.jpg";
+import MaximalistInterior from "../assets/Maximalist-interiors.jpg";
+import MinimalisticStyle from "../assets/Minimalistic-style.jpg";
+import MidCenturyModern from "../assets/Mid-century-modern.jpg";
+import Scandavian from "../assets/Scandavian.jpg";
+import Biophyllic from "../assets/Biophyllic-style.jpg";
+import Stylee from "../assets/Style.jpg";
+
 const styleImages = [
   {
     id: "style-1",
     title: "Contemporary style",
-    src: "https://img.freepik.com/premium-photo/gallery-interior-art_87720-203699.jpg?ga=GA1.1.1673158750.1693654360&semt=ais_hybrid&w=1300",
+    src: ContemporaryStyle,
   },
   {
     id: "style-2",
     title: "Minimalistic style",
-    src: "https://img.freepik.com/free-photo/view-futuristic-lighting-lamp-design_23-2151037475.jpg?ga=GA1.1.1673158750.1693654360&semt=ais_hybrid&w=1300",
+    src: MinimalisticStyle,
   },
   {
     id: "style-3",
     title: "Maximalist interiors",
-    src: "https://img.freepik.com/premium-photo/fashionforward-party-design-showcasing-trendy-stylish-pattern-arrangement_230068-13602.jpg?ga=GA1.1.1673158750.1693654360&semt=ais_hybrid&w=1300",
+    src: MaximalistInterior,
   },
   {
     id: "style-4",
     title: "Mid-century modern style",
-    src: "https://img.freepik.com/premium-photo/mid-century-modern-abstract-art-neural-network-generated-picture_636705-7447.jpg?ga=GA1.1.1673158750.1693654360&semt=ais_hybrid&w=1100",
+    src: MidCenturyModern,
   },
   {
     id: "style-5",
     title: "Scandinavian style",
-    src: "https://img.freepik.com/premium-photo/amazing-composition-white-design-shelf-with-christmas-decoration-lights-gifts-lanterns-deer_1150096-71.jpg?ga=GA1.1.1673158750.1693654360&semt=ais_hybrid&w=1100",
+    src: Scandavian,
   },
   {
     id: "style-6",
     title: "Biophyllic style",
-    src: "https://img.freepik.com/premium-photo/creative-composition-living-room-interior-design-with-designed-armchair-black-geometric-console-plants-golden-accessoriers-urban-jungle-concpet-template_431307-6470.jpg?ga=GA1.1.1673158750.1693654360&semt=ais_hybrid&w=1100",
+    src: Biophyllic,
   },
 ];
 
@@ -78,8 +86,7 @@ const Style = () => {
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage:
-              "url('https://img.freepik.com/free-photo/modern-styled-entryway_23-2150695915.jpg?ga=GA1.1.1673158750.1693654360&semt=ais_hybrid&w=1100')",
+            backgroundImage: `url(${Stylee})`,
           }}
         />
         <div className="absolute inset-0 bg-[#a1684e] opacity-60"></div>

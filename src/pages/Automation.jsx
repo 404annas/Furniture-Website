@@ -1,4 +1,4 @@
-import React from "react";
+import HomeAutomation from "../assets/Home-automation.jpg";
 
 const Automation = () => {
   return (
@@ -49,7 +49,7 @@ const Automation = () => {
         {/* Image */}
         <img
           className="w-full max-w-sm sm:max-w-md lg:max-w-[550px] rounded-lg shadow-[0_10px_25px_rgba(0,0,0,0.5)]"
-          src="https://img.freepik.com/premium-photo/digital-screen-wall-with-modern-luxury-living-room_472640-3421.jpg?ga=GA1.1.1673158750.1693654360&semt=ais_hybrid&w=1100"
+          src={HomeAutomation}
           alt="Home Automation"
         />
       </div>

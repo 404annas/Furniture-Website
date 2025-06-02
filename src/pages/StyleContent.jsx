@@ -2,36 +2,43 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { FaDesktop, FaUtensils, FaBed, FaBath } from "react-icons/fa";
 
+import ContemporaryStyle from "../assets/Contemporary-style.jpg"
+import MaximalistInterior from "../assets/Maximalist-interiors.jpg"
+import MinimalisticStyle from "../assets/Minimalistic-style.jpg"
+import MidCenturyModern from "../assets/Mid-century-modern.jpg"
+import Scandavian from "../assets/Scandavian.jpg"
+import Biophyllic from "../assets/Biophyllic-style.jpg"
+
 const styleMaterial = {
   "style-1": {
     title: "Your Style Is Contemporary",
     image:
-      "https://img.freepik.com/premium-photo/gallery-interior-art_87720-203699.jpg?ga=GA1.1.1673158750.1693654360&semt=ais_hybrid&w=1300",
+      ContemporaryStyle,
   },
   "style-2": {
     title: "Your Style Is Minimalistic",
     image:
-      "https://img.freepik.com/free-photo/view-futuristic-lighting-lamp-design_23-2151037475.jpg?ga=GA1.1.1673158750.1693654360&semt=ais_hybrid&w=1300",
+      MinimalisticStyle,
   },
   "style-3": {
     title: "Your Style Is Maximalist",
     image:
-      "https://img.freepik.com/premium-photo/fashionforward-party-design-showcasing-trendy-stylish-pattern-arrangement_230068-13602.jpg?ga=GA1.1.1673158750.1693654360&semt=ais_hybrid&w=1300",
+      MaximalistInterior,
   },
   "style-4": {
     title: "Your Style Is Mid-Century",
     image:
-      "https://img.freepik.com/premium-photo/mid-century-modern-abstract-art-neural-network-generated-picture_636705-7447.jpg?ga=GA1.1.1673158750.1693654360&semt=ais_hybrid&w=1100",
+      MidCenturyModern,
   },
   "style-5": {
     title: "Your Style Is Scandinavian",
     image:
-      "https://img.freepik.com/premium-photo/amazing-composition-white-design-shelf-with-christmas-decoration-lights-gifts-lanterns-deer_1150096-71.jpg?ga=GA1.1.1673158750.1693654360&semt=ais_hybrid&w=1100",
+      Scandavian,
   },
   "style-6": {
     title: "Your Style Is Biophilic",
     image:
-      "https://img.freepik.com/premium-photo/creative-composition-living-room-interior-design-with-designed-armchair-black-geometric-console-plants-golden-accessoriers-urban-jungle-concpet-template_431307-6470.jpg?ga=GA1.1.1673158750.1693654360&semt=ais_hybrid&w=1100",
+      Biophyllic,
   },
 };
 

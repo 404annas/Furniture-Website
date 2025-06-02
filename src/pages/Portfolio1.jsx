@@ -4,17 +4,17 @@ import "photoswipe/style.css";
 import { Link } from "react-router-dom";
 import { HiArrowLeft, HiArrowRight } from "react-icons/hi";
 
-import KingstonBg from "../assets/KingstonBg.jpg";
-import Kingston1 from "../assets/Kingston1.webp";
-import Kingston2 from "../assets/Kingston2.webp";
-import Kingston3 from "../assets/Kingston3.webp";
-import Kingston4 from "../assets/Kingston4.webp";
-import Kingston5 from "../assets/Kingston5.webp";
-import Kingston6 from "../assets/Kingston6.webp";
-import Kingston7 from "../assets/Kingston7.webp";
-import Kingston8 from "../assets/Kingston8.webp";
-import Kingston9 from "../assets/Kingston9.webp";
-import Kingston10 from "../assets/Kingston10.webp";
+import KingstonBg from "../assets/KingstonBg.jpeg";
+import Kingston1 from "../assets/Kingston1.jpeg";
+import Kingston2 from "../assets/Kingston2.jpeg";
+import Kingston3 from "../assets/Kingston3.jpg";
+import Kingston4 from "../assets/Kingston4.jpg";
+import Kingston5 from "../assets/Kingston5.jpg";
+import Kingston6 from "../assets/Kingston6.jpg";
+import Kingston7 from "../assets/Kingston7.jpeg";
+import Kingston8 from "../assets/Kingston8.jpg";
+import Kingston9 from "../assets/Kingston9.jpg";
+import Kingston10 from "../assets/Kingston10.jpg";
 
 const images = [
   {
@@ -28,6 +28,12 @@ const images = [
     width: 1600,
     height: 1200,
     caption: "Stylish Living Room",
+  },
+  {
+    src: KingstonBg,
+    width: 1600,
+    height: 1200,
+    caption: "Luxury Bathroom",
   },
   {
     src: Kingston3,
@@ -79,12 +85,6 @@ const images = [
   },
   {
     src: Kingston1,
-    width: 1600,
-    height: 1200,
-    caption: "Luxury Bathroom",
-  },
-  {
-    src: Kingston4,
     width: 1600,
     height: 1200,
     caption: "Luxury Bathroom",

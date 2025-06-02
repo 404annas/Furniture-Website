@@ -1,6 +1,6 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import { HiArrowLeft, HiArrowRight } from "react-icons/hi";
+import CollaborativeHubImg from "../assets/CollborativeHub.jpg";
 
 const Portfolio3 = () => {
   return (
@@ -14,7 +14,7 @@ const Portfolio3 = () => {
         </h1>
         <img
           className="my-8 w-full max-w-4xl h-auto rounded-md shadow-md object-cover"
-          src="https://designz.dwell-rich.com/wp-content/uploads/2023/11/Screenshot-2023-11-29-160007-1024x651.png"
+          src={CollaborativeHubImg}
           alt="Collaborative Hub"
         />
       </div>

@@ -1,4 +1,3 @@
-import React from "react";
 import { Gallery, Item } from "react-photoswipe-gallery";
 import "photoswipe/style.css";
 import { Link } from "react-router-dom";
@@ -13,6 +12,13 @@ import Before6 from "../assets/Before6.jpg";
 import Before7 from "../assets/Before7.jpg";
 import Before8 from "../assets/Before8.jpg";
 import Before9 from "../assets/Before9.jpg";
+
+import AfterMain from "../assets/AfterMain.webp";
+import After1 from "../assets/After1.webp";
+import After2 from "../assets/After2.webp";
+import After3 from "../assets/After3.webp";
+import After4 from "../assets/After4.webp";
+import After5 from "../assets/After5.webp";
 
 const beforeImages = [
   {
@@ -73,37 +79,37 @@ const beforeImages = [
 
 const afterImages = [
   {
-    src: "https://st.hzcdn.com/fimgs/07114a7f07d95ad9_6206-w312-h312-b0-p0---living-room.jpg",
+    src: AfterMain,
     width: 1600,
     height: 1200,
     caption: "Modern ",
   },
   {
-    src: "https://st.hzcdn.com/fimgs/8551bcb507d95ae1_7861-w312-h312-b0-p0---living-room.jpg",
+    src: After1,
     width: 1600,
     height: 1200,
     caption: "Luxury ",
   },
   {
-    src: "https://st.hzcdn.com/fimgs/7fe17fe707d95ae9_6089-w312-h312-b0-p0---living-room.jpg",
+    src: After2,
     width: 1600,
     height: 1200,
     caption: "Luxury ",
   },
   {
-    src: "https://st.hzcdn.com/fimgs/eea1a21807d95af8_5698-w312-h312-b0-p0---utility-room.jpg",
+    src: After3,
     width: 1600,
     height: 1200,
     caption: "Luxury ",
   },
   {
-    src: "https://st.hzcdn.com/fimgs/f9018ef807d95b00_6089-w312-h312-b0-p0---utility-room.jpg",
+    src: After4,
     width: 1600,
     height: 1200,
     caption: "Luxury ",
   },
   {
-    src: "https://st.hzcdn.com/fimgs/4aa11eb407d95b06_7879-w312-h312-b0-p0---garage.jpg",
+    src: After5,
     width: 1600,
     height: 1200,
     caption: "Luxury ",

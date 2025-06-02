@@ -1,4 +1,4 @@
-import React from "react";
+import Furnituree from "../assets/furniture-1.jpg"
 
 const Furniture = () => {
   return (
@@ -29,7 +29,7 @@ const Furniture = () => {
         {/* Image */}
         <img
           className="w-full max-w-md lg:max-w-lg rounded-lg shadow-[0_10px_25px_rgba(0,0,0,0.5)]"
-          src="https://img.freepik.com/premium-photo/contemporary-living-room-with-dining-table-set-colorful-chairs-stylish-lighting-fixtures_146105-22072.jpg?ga=GA1.1.1673158750.1693654360&semt=ais_hybrid&w=1300"
+          src={Furnituree}
           alt="Furniture Image"
         />
       </div>

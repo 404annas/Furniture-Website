@@ -1,4 +1,6 @@
 import TwinkinVid from "../assets/TwinkinVid.mp4";
+import ThreeD from "../assets/ThreeD.jpg"
+import BioVid from "../assets/BioVid.mp4";
 
 const DRendering = () => {
   return (
@@ -62,7 +64,7 @@ const DRendering = () => {
         <div className="flex-1">
           <img
             className="w-full h-auto rounded-xl shadow-[0_10px_25px_rgba(0,0,0,0.5)]"
-            src="https://img.freepik.com/free-photo/high-angle-measuring-tools-desk-still-life_23-2150440927.jpg?ga=GA1.1.1673158750.1693654360&semt=ais_hybrid&w=1100"
+            src={ThreeD}
             alt="Project"
           />
         </div>
@@ -81,7 +83,7 @@ const DRendering = () => {
           controls
           className="w-full md:w-1/2 lg:w-2/3 h-auto rounded-lg object-cover"
         >
-          <source src={TwinkinVid} type="video/mp4" />
+          <source src={BioVid} type="video/mp4" />
         </video>
       </div>
     </section>

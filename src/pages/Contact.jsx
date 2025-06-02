@@ -1,5 +1,7 @@
 import { useState } from "react";
 
+import ContactImg from "../assets/Contact.jpg"
+
 const Contact = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -29,7 +31,7 @@ const Contact = () => {
           className="absolute inset-0 bg-cover bg-center"
           style={{
             backgroundImage:
-              "url('https://img.freepik.com/premium-photo/illustration-living-room-interior_252025-70022.jpg?ga=GA1.1.1673158750.1693654360&semt=ais_hybrid&w=1400')",
+              `url(${ContactImg})`,
           }}
         ></div>
         <div className="absolute inset-0 bg-[#b37558] opacity-70"></div>

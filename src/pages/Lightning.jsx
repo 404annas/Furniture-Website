@@ -1,4 +1,4 @@
-import React from "react";
+import Lights from "../assets/Lightning.jpg";
 
 const Lightning = () => {
   return (
@@ -31,7 +31,7 @@ const Lightning = () => {
         {/* Image */}
         <img
           className="w-full max-w-sm sm:max-w-md lg:max-w-[550px] rounded-lg shadow-[0_10px_25px_rgba(0,0,0,0.5)]"
-          src="https://img.freepik.com/free-photo/3d-modern-lighting-lamp-design_23-2151047587.jpg?ga=GA1.1.1673158750.1693654360&semt=ais_hybrid&w=1000"
+          src={Lights}
           alt="Lightning Design"
         />
       </div>

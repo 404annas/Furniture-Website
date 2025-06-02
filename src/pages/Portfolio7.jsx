@@ -4,21 +4,25 @@ import "photoswipe/style.css";
 import { Link } from "react-router-dom";
 import { HiArrowLeft, HiArrowRight } from "react-icons/hi";
 
+import Garden1 from "../assets/Garden1.jpg";
+import Garden2 from "../assets/Graden2.jpg";
+import Garden3 from "../assets/Garden3.jpg";
+
 const images = [
   {
-    src: "https://designz.dwell-rich.com/wp-content/uploads/2024/12/WhatsApp-Image-2024-12-12-at-12.29.11-PM-5.jpeg-1.jpg",
+    src: Garden1,
     width: 1600,
     height: 1200,
     caption: "Modern ",
   },
   {
-    src: "https://designz.dwell-rich.com/wp-content/uploads/2024/12/WhatsApp-Image-2024-12-12-at-12.29.11-PM-3.jpeg-1.jpg",
+    src: Garden2,
     width: 1600,
     height: 1200,
     caption: "Stylish ",
   },
   {
-    src: "https://designz.dwell-rich.com/wp-content/uploads/2024/12/WhatsApp-Image-2024-12-12-at-12.29.11-PM-2.jpeg-1.jpg",
+    src: Garden3,
     width: 1600,
     height: 1200,
     caption: "Luxury ",
